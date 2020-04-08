@@ -1,0 +1,16 @@
+PODS:
+  - sonect-shop-sdk-ios (0.0.22)
+
+DEPENDENCIES:
+  - sonect-shop-sdk-ios
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - sonect-shop-sdk-ios
+
+SPEC CHECKSUMS:
+  sonect-shop-sdk-ios: 3c1170ce078058c27a0f694935f5ed7af4be6347
+
+PODFILE CHECKSUM: 03e9b33478381a6cbe0bf7856a4f36f96430f559
+
+COCOAPODS: 1.7.5
