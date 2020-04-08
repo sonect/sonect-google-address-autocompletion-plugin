@@ -23,9 +23,8 @@
 		7F2D2247243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D223F243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m */; };
 		7F2D2248243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2D2240243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F2D2249243DD3CA001CAE21 /* SNCGooglePlaceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D2241243DD3CA001CAE21 /* SNCGooglePlaceDetails.m */; };
-		7F2D224A243DD4F7001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; };
-		7F2D224B243DD4F7001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F2D2252243DD95A001CAE21 /* SonectShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D224F243DD858001CAE21 /* SonectShop.framework */; };
+		7F2D225E243E0807001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; };
 		AE5BBBE066086C2D97B3ECC1 /* Pods_GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF73DD2BADE8A2A9DB11B4 /* Pods_GoogleAddressAutocompletionPlugin.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,20 +37,6 @@
 			remoteInfo = GoogleAddressAutocompletionPlugin;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7F2D224E243DD4F8001CAE21 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7F2D224B243DD4F7001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12EDE3ABA90989E5C9378387 /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2D224A243DD4F7001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */,
+				7F2D225E243E0807001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */,
 				451F1ED2CE2A133A74001204 /* Pods_AddressAutocompletionPluginIntegrationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +206,6 @@
 				7F2D2222243DD277001CAE21 /* Sources */,
 				7F2D2223243DD277001CAE21 /* Frameworks */,
 				7F2D2224243DD277001CAE21 /* Resources */,
-				7F2D224E243DD4F8001CAE21 /* Embed Frameworks */,
 				F6B6508B485C7C82F0DCFEB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
