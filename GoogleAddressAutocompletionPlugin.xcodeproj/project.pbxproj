@@ -23,9 +23,7 @@
 		7F2D2247243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D223F243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m */; };
 		7F2D2248243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2D2240243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F2D2249243DD3CA001CAE21 /* SNCGooglePlaceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D2241243DD3CA001CAE21 /* SNCGooglePlaceDetails.m */; };
-		7F2D2252243DD95A001CAE21 /* SonectShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D224F243DD858001CAE21 /* SonectShop.framework */; };
 		7F2D225E243E0807001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; };
-		AE5BBBE066086C2D97B3ECC1 /* Pods_GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF73DD2BADE8A2A9DB11B4 /* Pods_GoogleAddressAutocompletionPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2D2252243DD95A001CAE21 /* SonectShop.framework in Frameworks */,
-				AE5BBBE066086C2D97B3ECC1 /* Pods_GoogleAddressAutocompletionPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
