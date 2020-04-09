@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "d9451abb89e32987ade0104f55f43b029df3b001",
+  "commitish" : "2fdf282f2964fbf2b1648e384f8724db7755d03b",
   "iOS" : [
     {
       "name" : "GoogleAddressAutocompletionPlugin",
-      "hash" : "3c1b2354b60611b4407a0a11ea41b7d557523828fb5430b1247abfed37c86b6d"
+      "hash" : "f513b40462fd8c7a4fdfdce7287a2ba845d3d12c063e7c0ba4994ba745fb1b5a"
     }
   ]
 }
