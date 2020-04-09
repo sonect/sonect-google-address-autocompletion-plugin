@@ -1,4 +1,4 @@
-# sonect-google-address-autocompletion-plugin
+# Sonect Google Address Autocompletion Plugin
 This is Sonect's address autocompletion plugin repository, based on Google Maps API, used to complement [Sonect Shop SDK](https://github.com/sonect/sonect-shop-sdk-ios)
 
 Contact support@sonect.ch if additional info is needed.
