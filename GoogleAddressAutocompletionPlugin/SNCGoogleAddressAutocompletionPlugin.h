@@ -10,9 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//Marking a forward protocol helps fix the problem with imports.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
 @protocol SNCAddressAutocompletionPlugin;
-
 @interface SNCGoogleAddressAutocompletionPlugin : NSObject <SNCAddressAutocompletionPlugin>
+#pragma clang diagnostic pop
 
 - (instancetype)initWithApiKey:(NSString *)apiKey;
 
