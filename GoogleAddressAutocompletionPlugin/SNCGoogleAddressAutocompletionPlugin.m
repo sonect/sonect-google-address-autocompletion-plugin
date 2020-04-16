@@ -36,9 +36,31 @@
 }
 
 - (void)adressDetailsForAddressId:(NSString *)addressId
-                completionHandler:(SNCAddressDetailsHandler)completionHandler {
-    [SNCGoogleMapsAPI getPlaceDetailsForPlaceId:addressId googleApiKey:self.apiKey completionHandler:^(SNCGooglePlaceDetails * _Nullable placeDetails, NSError * _Nullable error) {
+                completionHandler:(SNCAddressDetailsResultHandler)completionHandler {
+    [SNCGoogleMapsAPI getPlaceDetailsForPlaceId:addressId
+                                   googleApiKey:self.apiKey
+                              completionHandler:^(SNCGooglePlaceDetails * _Nullable placeDetails, NSError * _Nullable error) {
         completionHandler((id)placeDetails, error);
+    }];
+}
+
+- (void)shopsForSearchTerm:(NSString *)searchTerm
+               countryCode:(NSString *)countryCode
+         completionHandler:(SNCShopSearchResultHandler)completionHandler {
+    [SNCGoogleMapsAPI getShopsForSearchTerm:searchTerm
+                                countryCode:countryCode
+                               googleApiKey:self.apiKey
+                          completionHandler:^(SNCGoogleShopSearch * _Nullable shopSearch, NSError * _Nullable error) {
+        completionHandler((id)shopSearch, error);
+    }];
+}
+
+- (void)shopDetailsForShopId:(NSString *)shopId
+           completionHandler:(SNCShopDetailsResultHandler)completionHandler {
+    [SNCGoogleMapsAPI getShopDetailsForShopId:shopId
+                                 googleApiKey:self.apiKey
+                            completionHandler:^(SNCGoogleShopDetails * _Nullable shopDetails, NSError * _Nullable error) {
+        completionHandler((id)shopDetails, error);
     }];
 }
 
