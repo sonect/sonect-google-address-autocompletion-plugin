@@ -29,16 +29,16 @@
 
 - (void)addressAutocompletionForSearchTerm:(NSString *)searchTerm
                                countryCode:(NSString *)countryCode
-                         completionHandler:(SNCAddressAutocompletionResultHandler)compleionHandler {
+                         completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler {
     [SNCGoogleMapsAPI getAddressesForSearchTerm:searchTerm countryCode:countryCode googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
-        compleionHandler(addressAutocompletion, error);
+        completionHandler((id)addressAutocompletion, error);
     }];
 }
 
 - (void)adressDetailsForAddressId:(NSString *)addressId
-                completionHandler:(SNCAddressDetailsHandler)compleionHandler {
+                completionHandler:(SNCAddressDetailsHandler)completionHandler {
     [SNCGoogleMapsAPI getPlaceDetailsForPlaceId:addressId googleApiKey:self.apiKey completionHandler:^(SNCGooglePlaceDetails * _Nullable placeDetails, NSError * _Nullable error) {
-        compleionHandler(placeDetails, error);
+        completionHandler((id)placeDetails, error);
     }];
 }
 

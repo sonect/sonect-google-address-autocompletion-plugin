@@ -1,18 +1,9 @@
 {
-  "Mac" : [
-
-  ],
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
-  "commitish" : "2fdf282f2964fbf2b1648e384f8724db7755d03b",
+  "commitish" : "7a2f6728f88abbe97702243766fed3b118d3e121",
   "iOS" : [
     {
       "name" : "GoogleAddressAutocompletionPlugin",
-      "hash" : "f513b40462fd8c7a4fdfdce7287a2ba845d3d12c063e7c0ba4994ba745fb1b5a"
+      "hash" : "a2c398119ff117853a58773ceb38ea67a3815bb00287bd918308490b564aa677"
     }
   ]
 }
