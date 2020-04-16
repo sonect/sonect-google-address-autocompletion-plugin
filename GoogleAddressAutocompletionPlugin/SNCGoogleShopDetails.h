@@ -10,10 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SNCShopDetails, SNCAddressDetails;
 @class SNCOpeningHours;
 
+//Marking a forward protocol helps fix the problem with imports.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
+@protocol SNCShopDetails, SNCAddressDetails;
 @interface SNCGoogleShopDetails : NSObject <SNCShopDetails>
+#pragma clang diagnostic pop
 
 @property (copy, readonly) NSString *name;
 @property (copy, readonly) id <SNCAddressDetails> address;

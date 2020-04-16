@@ -10,9 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//Marking a forward protocol helps fix the problem with imports.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
 @protocol SNCShopSearch, SNCShopCandidate, SNCAddressPrediction;
-
 @interface SNCGoogleShopCandidate : NSObject <SNCShopCandidate>
+#pragma clang diagnostic pop
 
 @property (nonatomic, copy, readonly) NSString *shopId;
 @property (nonatomic, copy, readonly) NSString *name;
@@ -22,7 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
 @interface SNCGoogleShopSearch : NSObject <SNCShopSearch>
+#pragma clang diagnostic pop
 
 @property (readonly) NSArray <id<SNCAddressPrediction>> *candidates;
 

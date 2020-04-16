@@ -31,14 +31,16 @@
                                countryCode:(NSString *)countryCode
                          completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler {
     [SNCGoogleMapsAPI getAddressesForSearchTerm:searchTerm countryCode:countryCode googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
-        completionHandler(addressAutocompletion, error);
+        completionHandler((id)addressAutocompletion, error);
     }];
 }
 
 - (void)adressDetailsForAddressId:(NSString *)addressId
                 completionHandler:(SNCAddressDetailsResultHandler)completionHandler {
-    [SNCGoogleMapsAPI getPlaceDetailsForPlaceId:addressId googleApiKey:self.apiKey completionHandler:^(SNCGooglePlaceDetails * _Nullable placeDetails, NSError * _Nullable error) {
-        completionHandler(placeDetails, error);
+    [SNCGoogleMapsAPI getPlaceDetailsForPlaceId:addressId
+                                   googleApiKey:self.apiKey
+                              completionHandler:^(SNCGooglePlaceDetails * _Nullable placeDetails, NSError * _Nullable error) {
+        completionHandler((id)placeDetails, error);
     }];
 }
 
@@ -49,7 +51,7 @@
                                 countryCode:countryCode
                                googleApiKey:self.apiKey
                           completionHandler:^(SNCGoogleShopSearch * _Nullable shopSearch, NSError * _Nullable error) {
-        completionHandler(shopSearch, error);
+        completionHandler((id)shopSearch, error);
     }];
 }
 
@@ -58,7 +60,7 @@
     [SNCGoogleMapsAPI getShopDetailsForShopId:shopId
                                  googleApiKey:self.apiKey
                             completionHandler:^(SNCGoogleShopDetails * _Nullable shopDetails, NSError * _Nullable error) {
-        completionHandler(shopDetails, error);
+        completionHandler((id)shopDetails, error);
     }];
 }
 

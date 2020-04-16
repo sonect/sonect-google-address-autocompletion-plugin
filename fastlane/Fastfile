@@ -1,0 +1,63 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Makes a public distribution."
+  lane :distribute do
+    carthage(
+      command: "build",
+      platform: "iOS",
+      no_skip_current: true)
+
+    carthage(
+      command: "archive",
+      frameworks: ["GoogleAddressAutocompletionPlugin"],
+      output: "GoogleAddressAutocompletionPlugin.framework.zip")
+
+    zip(
+      path: "Carthage/Build/iOS/GoogleAddressAutocompletionPlugin.framework",
+      output_path: "GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip"
+    )
+
+    version = get_version_number(
+      target: "GoogleAddressAutocompletionPlugin")
+
+    name = "Release " + version
+    token = File.read("github.token")
+
+    set_github_release(
+      tag_name: version,
+      name: name,
+      description: "No changelog provided",
+      repository_name: "sonect/sonect-google-address-autocompletion-plugin",
+      api_token: token,
+      upload_assets: ["GoogleAddressAutocompletionPlugin.framework.zip", "GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip"])
+
+    commitAndPush("Update latest User Public build")
+  
+  end
+
+  def commitAndPush(message) 
+    git_add
+    git_commit(path: "*", message: message)
+    push_to_git_remote(
+      local_branch: "master",
+      remote_branch: "master")
+  end
+
+end

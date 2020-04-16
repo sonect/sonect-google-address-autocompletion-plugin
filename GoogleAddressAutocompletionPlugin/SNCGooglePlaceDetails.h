@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Weverything"
 @protocol SNCAddressDetails;
-
 @interface SNCGooglePlaceDetails : NSObject <SNCAddressDetails>
+#pragma clang diagnostic pop
 
 @property (nonatomic, copy, nullable, readonly) NSString *country;
 @property (nonatomic, copy, nullable, readonly) NSString *countryCode;
