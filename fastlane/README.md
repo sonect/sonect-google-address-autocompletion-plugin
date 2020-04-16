@@ -16,11 +16,6 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios printKey
-```
-fastlane ios printKey
-```
-
 ### ios distribute
 ```
 fastlane ios distribute
