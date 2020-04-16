@@ -5,27 +5,47 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.009412">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.007297">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: carthage" time="28.900257">
+      <testcase classname="fastlane.lanes" name="1: carthage" time="18.281501">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: carthage" time="0.385666">
+      <testcase classname="fastlane.lanes" name="2: carthage" time="0.212662">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: zip" time="0.024742">
+      <testcase classname="fastlane.lanes" name="3: zip" time="0.026479">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: get_version_number" time="0.090084">
+      <testcase classname="fastlane.lanes" name="4: get_version_number" time="0.099048">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: set_github_release" time="4.953153">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: git_add" time="0.149651">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: git_commit" time="0.187165">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: push_to_git_remote" time="5.679784">
         
       </testcase>
     
