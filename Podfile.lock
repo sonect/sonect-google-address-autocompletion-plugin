@@ -1,5 +1,5 @@
 PODS:
-  - sonect-shop-sdk-ios (0.0.22)
+  - sonect-shop-sdk-ios (0.0.28)
 
 DEPENDENCIES:
   - sonect-shop-sdk-ios
@@ -9,7 +9,7 @@ SPEC REPOS:
     - sonect-shop-sdk-ios
 
 SPEC CHECKSUMS:
-  sonect-shop-sdk-ios: 3c1170ce078058c27a0f694935f5ed7af4be6347
+  sonect-shop-sdk-ios: 87b9dd2ebb332a1ddcd0ca7e77bf3827caf27968
 
 PODFILE CHECKSUM: 03e9b33478381a6cbe0bf7856a4f36f96430f559
 

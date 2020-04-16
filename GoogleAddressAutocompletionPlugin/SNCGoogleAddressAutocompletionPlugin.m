@@ -29,16 +29,36 @@
 
 - (void)addressAutocompletionForSearchTerm:(NSString *)searchTerm
                                countryCode:(NSString *)countryCode
-                         completionHandler:(SNCAddressAutocompletionResultHandler)compleionHandler {
+                         completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler {
     [SNCGoogleMapsAPI getAddressesForSearchTerm:searchTerm countryCode:countryCode googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
-        compleionHandler(addressAutocompletion, error);
+        completionHandler(addressAutocompletion, error);
     }];
 }
 
 - (void)adressDetailsForAddressId:(NSString *)addressId
-                completionHandler:(SNCAddressDetailsHandler)compleionHandler {
+                completionHandler:(SNCAddressDetailsResultHandler)completionHandler {
     [SNCGoogleMapsAPI getPlaceDetailsForPlaceId:addressId googleApiKey:self.apiKey completionHandler:^(SNCGooglePlaceDetails * _Nullable placeDetails, NSError * _Nullable error) {
-        compleionHandler(placeDetails, error);
+        completionHandler(placeDetails, error);
+    }];
+}
+
+- (void)shopsForSearchTerm:(NSString *)searchTerm
+               countryCode:(NSString *)countryCode
+         completionHandler:(SNCShopSearchResultHandler)completionHandler {
+    [SNCGoogleMapsAPI getShopsForSearchTerm:searchTerm
+                                countryCode:countryCode
+                               googleApiKey:self.apiKey
+                          completionHandler:^(SNCGoogleShopSearch * _Nullable shopSearch, NSError * _Nullable error) {
+        completionHandler(shopSearch, error);
+    }];
+}
+
+- (void)shopDetailsForShopId:(NSString *)shopId
+           completionHandler:(SNCShopDetailsResultHandler)completionHandler {
+    [SNCGoogleMapsAPI getShopDetailsForShopId:shopId
+                                 googleApiKey:self.apiKey
+                            completionHandler:^(SNCGoogleShopDetails * _Nullable shopDetails, NSError * _Nullable error) {
+        completionHandler(shopDetails, error);
     }];
 }
 
