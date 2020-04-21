@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04281562244F232800FE8CE0 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; };
+		04281563244F232800FE8CE0 /* GoogleAddressAutocompletionPlugin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		451F1ED2CE2A133A74001204 /* Pods_AddressAutocompletionPluginIntegrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076C218C4F07917173FC206 /* Pods_AddressAutocompletionPluginIntegrationApp.framework */; };
 		7F2D221C243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2D221A243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F2D2229243DD277001CAE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D2228243DD277001CAE21 /* AppDelegate.swift */; };
-		7F2D222B243DD277001CAE21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D222A243DD277001CAE21 /* SceneDelegate.swift */; };
 		7F2D222D243DD277001CAE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D222C243DD277001CAE21 /* ViewController.swift */; };
 		7F2D2230243DD277001CAE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D222E243DD277001CAE21 /* Main.storyboard */; };
 		7F2D2232243DD278001CAE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2D2231243DD278001CAE21 /* Assets.xcassets */; };
@@ -23,11 +24,10 @@
 		7F2D2247243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D223F243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m */; };
 		7F2D2248243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2D2240243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F2D2249243DD3CA001CAE21 /* SNCGooglePlaceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D2241243DD3CA001CAE21 /* SNCGooglePlaceDetails.m */; };
-		7F2D225E243E0807001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7F2D224C243DD4F7001CAE21 /* PBXContainerItemProxy */ = {
+		0428155F244F21D500FE8CE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F2D220E243DD0B0001CAE21 /* Project object */;
 			proxyType = 1;
@@ -35,6 +35,19 @@
 			remoteInfo = GoogleAddressAutocompletionPlugin;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04281561244F22E900FE8CE0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04281563244F232800FE8CE0 /* GoogleAddressAutocompletionPlugin.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12EDE3ABA90989E5C9378387 /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +59,6 @@
 		7F2D221B243DD0B0001CAE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F2D2226243DD277001CAE21 /* AddressAutocompletionPluginIntegrationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressAutocompletionPluginIntegrationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2D2228243DD277001CAE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F2D222A243DD277001CAE21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F2D222C243DD277001CAE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F2D222F243DD277001CAE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F2D2231243DD278001CAE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2D225E243E0807001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */,
+				04281562244F232800FE8CE0 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */,
 				451F1ED2CE2A133A74001204 /* Pods_AddressAutocompletionPluginIntegrationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				7F2D2228243DD277001CAE21 /* AppDelegate.swift */,
-				7F2D222A243DD277001CAE21 /* SceneDelegate.swift */,
 				7F2D222C243DD277001CAE21 /* ViewController.swift */,
 				7F2D222E243DD277001CAE21 /* Main.storyboard */,
 				7F2D2231243DD278001CAE21 /* Assets.xcassets */,
@@ -203,11 +214,12 @@
 				7F2D2223243DD277001CAE21 /* Frameworks */,
 				7F2D2224243DD277001CAE21 /* Resources */,
 				F6B6508B485C7C82F0DCFEB1 /* [CP] Embed Pods Frameworks */,
+				04281561244F22E900FE8CE0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7F2D224D243DD4F7001CAE21 /* PBXTargetDependency */,
+				04281560244F21D500FE8CE0 /* PBXTargetDependency */,
 			);
 			name = AddressAutocompletionPluginIntegrationApp;
 			productName = AddressAutocompletionPluginIntegrationApp;
@@ -353,17 +365,16 @@
 			files = (
 				7F2D222D243DD277001CAE21 /* ViewController.swift in Sources */,
 				7F2D2229243DD277001CAE21 /* AppDelegate.swift in Sources */,
-				7F2D222B243DD277001CAE21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7F2D224D243DD4F7001CAE21 /* PBXTargetDependency */ = {
+		04281560244F21D500FE8CE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7F2D2216243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin */;
-			targetProxy = 7F2D224C243DD4F7001CAE21 /* PBXContainerItemProxy */;
+			targetProxy = 0428155F244F21D500FE8CE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -519,6 +530,7 @@
 				);
 				INFOPLIST_FILE = GoogleAddressAutocompletionPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +560,7 @@
 				);
 				INFOPLIST_FILE = GoogleAddressAutocompletionPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,6 +586,7 @@
 					"$(PROJECT_DIR)/Pods/sonect-shop-sdk-ios",
 				);
 				INFOPLIST_FILE = AddressAutocompletionPluginIntegrationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +612,7 @@
 					"$(PROJECT_DIR)/Pods/sonect-shop-sdk-ios",
 				);
 				INFOPLIST_FILE = AddressAutocompletionPluginIntegrationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
