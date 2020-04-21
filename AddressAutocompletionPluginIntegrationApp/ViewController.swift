@@ -27,5 +27,9 @@ class ViewController: UIViewController {
         plugin.addressAutocompletion(forSearchTerm: "Dobri Voynikov", countryCode: "BG") { (addressAutocompletion, error) in
             print(String(describing: addressAutocompletion))
         }
+        
+        plugin.shops(forSearchTerm: "дар", countryCode: "BG") { (shopSearch, error) in
+            print(String(describing: shopSearch))
+        }
     }
 }

@@ -24,6 +24,11 @@
 		7F2D2247243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D223F243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m */; };
 		7F2D2248243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F2D2240243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F2D2249243DD3CA001CAE21 /* SNCGooglePlaceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D2241243DD3CA001CAE21 /* SNCGooglePlaceDetails.m */; };
+		7F2D225E243E0807001CAE21 /* GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2D2217243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.framework */; };
+		7FE44F152448A94F00DE22F0 /* SNCGoogleShopDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE44F112448A94E00DE22F0 /* SNCGoogleShopDetails.h */; };
+		7FE44F162448A94F00DE22F0 /* SNCGoogleShopDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE44F122448A94F00DE22F0 /* SNCGoogleShopDetails.m */; };
+		7FE44F172448A94F00DE22F0 /* SNCGoogleShopSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE44F132448A94F00DE22F0 /* SNCGoogleShopSearch.h */; };
+		7FE44F182448A94F00DE22F0 /* SNCGoogleShopSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE44F142448A94F00DE22F0 /* SNCGoogleShopSearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,10 @@
 		7F2D2240243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCGoogleAddressAutocompletionPlugin.h; sourceTree = "<group>"; };
 		7F2D2241243DD3CA001CAE21 /* SNCGooglePlaceDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCGooglePlaceDetails.m; sourceTree = "<group>"; };
 		7F2D224F243DD858001CAE21 /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SonectShop.framework; path = "Pods/sonect-shop-sdk-ios/SonectShop.framework"; sourceTree = "<group>"; };
+		7FE44F112448A94E00DE22F0 /* SNCGoogleShopDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCGoogleShopDetails.h; sourceTree = "<group>"; };
+		7FE44F122448A94F00DE22F0 /* SNCGoogleShopDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCGoogleShopDetails.m; sourceTree = "<group>"; };
+		7FE44F132448A94F00DE22F0 /* SNCGoogleShopSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCGoogleShopSearch.h; sourceTree = "<group>"; };
+		7FE44F142448A94F00DE22F0 /* SNCGoogleShopSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCGoogleShopSearch.m; sourceTree = "<group>"; };
 		DBBF73DD2BADE8A2A9DB11B4 /* Pods_GoogleAddressAutocompletionPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAddressAutocompletionPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FA08F444F073CCF2BBC98D /* Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig"; path = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +145,10 @@
 				7F2D223F243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m */,
 				7F2D223C243DD3C9001CAE21 /* SNCGoogleAutocompleteAddresses.h */,
 				7F2D223D243DD3C9001CAE21 /* SNCGoogleAutocompleteAddresses.m */,
+				7FE44F112448A94E00DE22F0 /* SNCGoogleShopDetails.h */,
+				7FE44F122448A94F00DE22F0 /* SNCGoogleShopDetails.m */,
+				7FE44F132448A94F00DE22F0 /* SNCGoogleShopSearch.h */,
+				7FE44F142448A94F00DE22F0 /* SNCGoogleShopSearch.m */,
 				7F2D223A243DD3C9001CAE21 /* SNCGoogleMapsAPI.h */,
 				7F2D223B243DD3C9001CAE21 /* SNCGoogleMapsAPI.m */,
 				7F2D223E243DD3C9001CAE21 /* SNCGooglePlaceDetails.h */,
@@ -176,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2D2244243DD3CA001CAE21 /* SNCGoogleAutocompleteAddresses.h in Headers */,
+				7FE44F152448A94F00DE22F0 /* SNCGoogleShopDetails.h in Headers */,
 				7F2D2246243DD3CA001CAE21 /* SNCGooglePlaceDetails.h in Headers */,
+				7FE44F172448A94F00DE22F0 /* SNCGoogleShopSearch.h in Headers */,
 				7F2D2242243DD3CA001CAE21 /* SNCGoogleMapsAPI.h in Headers */,
 				7F2D2248243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.h in Headers */,
 				7F2D221C243DD0B0001CAE21 /* GoogleAddressAutocompletionPlugin.h in Headers */,
@@ -355,7 +370,9 @@
 				7F2D2245243DD3CA001CAE21 /* SNCGoogleAutocompleteAddresses.m in Sources */,
 				7F2D2243243DD3CA001CAE21 /* SNCGoogleMapsAPI.m in Sources */,
 				7F2D2249243DD3CA001CAE21 /* SNCGooglePlaceDetails.m in Sources */,
+				7FE44F182448A94F00DE22F0 /* SNCGoogleShopSearch.m in Sources */,
 				7F2D2247243DD3CA001CAE21 /* SNCGoogleAddressAutocompletionPlugin.m in Sources */,
+				7FE44F162448A94F00DE22F0 /* SNCGoogleShopDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +536,7 @@
 			baseConfigurationReference = 12EDE3ABA90989E5C9378387 /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -536,7 +554,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonect.GoogleAddressAutocompletionPlugin.GoogleAddressAutocompletionPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -549,6 +567,7 @@
 			baseConfigurationReference = 51FEBA9381F25A0C58B6C300 /* Pods-GoogleAddressAutocompletionPlugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -566,7 +585,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonect.GoogleAddressAutocompletionPlugin.GoogleAddressAutocompletionPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
