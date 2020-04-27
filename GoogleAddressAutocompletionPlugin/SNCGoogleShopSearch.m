@@ -19,6 +19,7 @@
         _shopId = [dictionary[@"place_id"] copy];
     }
     
+    
     return self;
 }
 
@@ -33,7 +34,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        _candidates = [self parseCandidates:dictionary[@"candidates"]];
+        _candidates = [self parseCandidates:dictionary[@"results"]];
     }
     
     return self;

@@ -14,7 +14,7 @@
 
 static NSString *addressAutocomplete = @"https://maps.googleapis.com/maps/api/place/autocomplete/json";
 static NSString *placeDetails = @"https://maps.googleapis.com/maps/api/place/details/json";
-static NSString *searchPlace = @"https://maps.googleapis.com/maps/api/place/findplacefromtext/json";
+static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/textsearch/json";
 
 @implementation SNCGoogleMapsAPI
 
@@ -113,13 +113,13 @@ static NSString *searchPlace = @"https://maps.googleapis.com/maps/api/place/find
                   countryCode:(NSString *)countryCode
                  googleApiKey:(NSString *)key
             completionHandler:(SNCGoogleShopSearchCompletionHandler)compleionHandler {
-    
-    NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:searchPlace];
+    NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:textSearchPlace];
     serviceUrl.queryItems = @[
-        [NSURLQueryItem queryItemWithName:@"input" value:searchTerm],
-        [NSURLQueryItem queryItemWithName:@"inputtype" value:@"textquery"],
+        [NSURLQueryItem queryItemWithName:@"query" value:searchTerm],
         [NSURLQueryItem queryItemWithName:@"key" value:key],
-        [NSURLQueryItem queryItemWithName:@"fields" value:@"place_id,icon,formatted_address,name"]
+        [NSURLQueryItem queryItemWithName:@"region" value:countryCode],
+        [NSURLQueryItem queryItemWithName:@"type" value:@"establishment"],
+        [NSURLQueryItem queryItemWithName:@"fields" value:@"place_id,formatted_address,name"]
     ];
 
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:serviceUrl.URL];
