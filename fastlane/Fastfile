@@ -49,6 +49,8 @@ platform :ios do
       upload_assets: ["GoogleAddressAutocompletionPlugin.framework.zip", "GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip"])
 
     commitAndPush("Update latest User Public build")
+
+    pod_push
   
   end
 
