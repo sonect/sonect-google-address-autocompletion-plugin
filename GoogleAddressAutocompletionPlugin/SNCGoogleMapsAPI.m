@@ -113,13 +113,13 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
                   countryCode:(NSString *)countryCode
                  googleApiKey:(NSString *)key
             completionHandler:(SNCGoogleShopSearchCompletionHandler)compleionHandler {
-    NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:textSearchPlace];
+    
+    NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:addressAutocomplete];
     serviceUrl.queryItems = @[
-        [NSURLQueryItem queryItemWithName:@"query" value:searchTerm],
+        [NSURLQueryItem queryItemWithName:@"input" value:searchTerm],
+        [NSURLQueryItem queryItemWithName:@"types" value:@"establishment"],
         [NSURLQueryItem queryItemWithName:@"key" value:key],
-        [NSURLQueryItem queryItemWithName:@"region" value:countryCode],
-        [NSURLQueryItem queryItemWithName:@"type" value:@"establishment"],
-        [NSURLQueryItem queryItemWithName:@"fields" value:@"place_id,formatted_address,name"]
+        [NSURLQueryItem queryItemWithName:@"components" value:[NSString stringWithFormat:@"country:%@", countryCode]]
     ];
 
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:serviceUrl.URL];
