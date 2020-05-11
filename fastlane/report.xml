@@ -5,47 +5,52 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.007297">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.01114">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: carthage" time="18.281501">
+      <testcase classname="fastlane.lanes" name="1: carthage" time="37.500911">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: carthage" time="0.212662">
+      <testcase classname="fastlane.lanes" name="2: carthage" time="0.484458">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: zip" time="0.026479">
+      <testcase classname="fastlane.lanes" name="3: zip" time="0.039806">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: get_version_number" time="0.099048">
+      <testcase classname="fastlane.lanes" name="4: get_version_number" time="0.087894">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: set_github_release" time="4.953153">
+      <testcase classname="fastlane.lanes" name="5: set_github_release" time="4.962585">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: git_add" time="0.149651">
+      <testcase classname="fastlane.lanes" name="6: git_add" time="0.227164">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: git_commit" time="0.187165">
+      <testcase classname="fastlane.lanes" name="7: git_commit" time="0.252713">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="8: push_to_git_remote" time="5.679784">
+      <testcase classname="fastlane.lanes" name="8: push_to_git_remote" time="6.464158">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: pod_push" time="14.607464">
         
       </testcase>
     

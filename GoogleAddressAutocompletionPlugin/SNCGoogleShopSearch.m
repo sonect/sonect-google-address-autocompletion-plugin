@@ -14,11 +14,10 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        _address = [dictionary[@"formatted_address"] copy];
-        _name = [dictionary[@"name"] copy];
         _shopId = [dictionary[@"place_id"] copy];
+        _name = [dictionary[@"structured_formatting"][@"main_text"] copy];
+        _address = [dictionary[@"structured_formatting"][@"secondary_text"] copy];
     }
-    
     
     return self;
 }
@@ -34,7 +33,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        _candidates = [self parseCandidates:dictionary[@"results"]];
+        _candidates = [self parseCandidates:dictionary[@"predictions"]];
     }
     
     return self;
