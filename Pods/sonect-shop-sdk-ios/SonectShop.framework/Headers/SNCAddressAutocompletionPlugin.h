@@ -34,12 +34,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, readonly) NSString *name;
 @property (copy, readonly) id <SNCAddressDetails> address;
 @property (copy, readonly) SNCOpeningHours *openingHours;
+@property (copy, readonly) NSArray <NSString*> *types;
 @end
 
 @protocol SNCShopCandidate <NSObject>
 @property (copy, readonly) NSString *shopId;
 @property (copy, readonly) NSString *name;
 @property (copy, readonly) NSString *address;
+@property (copy, readonly) NSArray <NSString*> *types;
 @end
 
 @protocol SNCShopSearch <NSObject>

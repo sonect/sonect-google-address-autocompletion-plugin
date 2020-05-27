@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, readonly) NSString *name;
 @property (copy, readonly) id <SNCAddressDetails> address;
 @property (copy, readonly) SNCOpeningHours *openingHours;
+@property (nonatomic, copy, readonly) NSArray <NSString*> *types;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 

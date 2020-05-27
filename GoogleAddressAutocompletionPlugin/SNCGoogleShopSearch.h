@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *shopId;
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *address;
+@property (nonatomic, copy, readonly) NSArray <NSString*> *types;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
