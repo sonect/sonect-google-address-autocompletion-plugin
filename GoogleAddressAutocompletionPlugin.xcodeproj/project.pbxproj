@@ -535,7 +535,7 @@
 			baseConfigurationReference = 12EDE3ABA90989E5C9378387 /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -553,7 +553,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonect.GoogleAddressAutocompletionPlugin.GoogleAddressAutocompletionPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -566,7 +566,7 @@
 			baseConfigurationReference = 51FEBA9381F25A0C58B6C300 /* Pods-GoogleAddressAutocompletionPlugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -584,7 +584,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonect.GoogleAddressAutocompletionPlugin.GoogleAddressAutocompletionPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
