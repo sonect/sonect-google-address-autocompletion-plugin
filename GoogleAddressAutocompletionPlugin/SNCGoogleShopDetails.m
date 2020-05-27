@@ -20,6 +20,7 @@
         _address = [[SNCGooglePlaceDetails alloc] initWithDictionary:dictionary];
         _name = [resultDictionary[@"name"] copy];
         _openingHours = [self parseOpeningHours:[resultDictionary[@"opening_hours"] copy]];
+        _types = [resultDictionary[@"types"] copy];
     }
     
     return self;

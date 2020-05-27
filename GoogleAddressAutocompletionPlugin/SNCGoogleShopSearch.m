@@ -17,13 +17,14 @@
         _shopId = [dictionary[@"place_id"] copy];
         _name = [dictionary[@"structured_formatting"][@"main_text"] copy];
         _address = [dictionary[@"structured_formatting"][@"secondary_text"] copy];
+        _types = [dictionary[@"types"] copy];
     }
     
     return self;
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@ %@ id: %@", self.name, self.address, self.shopId];
+    return [NSString stringWithFormat:@"%@ %@ id: %@ types: %@", self.name, self.address, self.shopId, self.types];
 }
 
 @end

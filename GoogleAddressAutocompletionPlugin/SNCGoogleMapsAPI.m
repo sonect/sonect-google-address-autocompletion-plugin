@@ -162,7 +162,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
     serviceUrl.queryItems = @[
         [NSURLQueryItem queryItemWithName:@"placeid" value:placeId],
-        [NSURLQueryItem queryItemWithName:@"fields" value:@"address_component,photo,name,opening_hours,geometry"],
+        [NSURLQueryItem queryItemWithName:@"fields" value:@"address_component,photo,name,opening_hours,geometry,type"],
         [NSURLQueryItem queryItemWithName:@"key" value:key],
     ];
     
