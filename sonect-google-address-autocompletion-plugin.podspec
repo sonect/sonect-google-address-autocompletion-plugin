@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "sonect-google-address-autocompletion-plugin"
-    spec.version      = "1.0.7"
+    spec.version      = "1.0.8"
     spec.summary      = "Sonect Google Address Autocompletion Plugin"
     spec.description  = <<-DESC
     This is the Sonect Google Address Autocompletion Plugin public podspec. 
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
                       LICENSE
                  }
     spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
-    spec.platform     = :ios, "10.0"
+    spec.platform     = :ios, "9.0"
     spec.source       = { :http => "https://github.com/sonect/sonect-google-address-autocompletion-plugin/releases/download/#{spec.version}/GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip" }
     spec.ios.vendored_frameworks = 'GoogleAddressAutocompletionPlugin.framework'
   
