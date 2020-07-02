@@ -7,7 +7,7 @@
 //
 
 #import "SNCGoogleAutocompleteAddresses.h"
-#import <SonectShop/SNCAddressAutocompletionPlugin.h>
+#import <SonectCore/SNCAddressAutocompletionPlugin.h>
 
 @implementation SNCGoogleAddressPrediction
 

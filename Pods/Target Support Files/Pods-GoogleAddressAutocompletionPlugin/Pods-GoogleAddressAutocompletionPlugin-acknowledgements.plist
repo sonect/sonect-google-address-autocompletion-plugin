@@ -22,6 +22,20 @@ Sonect, January 2020.
 			<key>License</key>
 			<string>Sonect Closed Source</string>
 			<key>Title</key>
+			<string>sonect-core-ios</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright (C) Sonect AG - All Rights Reserved
+Unauthorized copying of this file, and the Sonect SDK via any medium is strictly prohibited
+Proprietary and confidential
+Sonect, January 2020. 
+</string>
+			<key>License</key>
+			<string>Sonect Closed Source</string>
+			<key>Title</key>
 			<string>sonect-shop-sdk-ios</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

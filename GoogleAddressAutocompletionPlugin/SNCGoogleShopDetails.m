@@ -8,8 +8,8 @@
 
 #import "SNCGoogleShopDetails.h"
 #import "SNCGooglePlaceDetails.h"
-#import <SonectShop/SNCAddressAutocompletionPlugin.h>
-#import <SonectShop/SNCOpeningHours.h>
+#import <SonectCore/SNCAddressAutocompletionPlugin.h>
+#import <SonectCore/SNCOpeningHours.h>
 
 @implementation SNCGoogleShopDetails
 

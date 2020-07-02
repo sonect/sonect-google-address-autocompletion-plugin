@@ -9,6 +9,7 @@
 import UIKit
 import GoogleAddressAutocompletionPlugin
 import SonectShop
+import SonectCore
 
 class ViewController: UIViewController {
 

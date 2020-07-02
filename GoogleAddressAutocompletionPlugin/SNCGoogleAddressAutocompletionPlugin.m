@@ -8,7 +8,7 @@
 
 #import "SNCGoogleAddressAutocompletionPlugin.h"
 #import "SNCGoogleMapsAPI.h"
-#import <SonectShop/SNCAddressAutocompletionPlugin.h>
+#import <SonectCore/SNCAddressAutocompletionPlugin.h>
 
 @interface SNCGoogleAddressAutocompletionPlugin ()
 

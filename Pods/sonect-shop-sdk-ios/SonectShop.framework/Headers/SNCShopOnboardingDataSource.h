@@ -86,6 +86,14 @@ Called on dataSource to get shop opening hours during onboarding. If returns YES
 */
 - (BOOL)willProvideOpeningHours:(SNCShopOnboardingOpeningHoursCallback)shopOpeningHoursCallback;
 
+/**
+Called on dataSource to check if the app will provide data like shop name or address.
+In case this returns YES, address autocompletion will be disabled for the user.
+
+@return YES if data source will provide shop info.
+*/
+- (BOOL)willProvideShopInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END

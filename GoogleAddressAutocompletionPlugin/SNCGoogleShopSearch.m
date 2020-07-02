@@ -7,7 +7,7 @@
 //
 
 #import "SNCGoogleShopSearch.h"
-#import <SonectShop/SNCAddressAutocompletionPlugin.h>
+#import <SonectCore/SNCAddressAutocompletionPlugin.h>
 
 @implementation SNCGoogleShopCandidate
 

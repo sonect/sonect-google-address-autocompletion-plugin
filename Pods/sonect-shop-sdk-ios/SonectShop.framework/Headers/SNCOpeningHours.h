@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) BOOL openNow;
 @property (nonatomic, copy, readonly) NSArray<NSString*> *weekdayText;
+
+/// Periods of open time. IMPORTANT: periods day should be in range 0 - 6!
 @property (nonatomic, copy, readonly) NSArray<SNCPeriod*> *periods;
 
 - (instancetype)initWithPeriods:(NSArray<SNCPeriod*> *)periods;

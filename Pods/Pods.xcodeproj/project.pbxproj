@@ -16,26 +16,49 @@
 			);
 			name = "sonect-shop-sdk-ios";
 		};
+		36DC2FE70682CB5EFB03AE60B862AC7C /* sonect-core-ios */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 876793BB5323718576BEF8E56738F640 /* Build configuration list for PBXAggregateTarget "sonect-core-ios" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "sonect-core-ios";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2A7D661856ABF046DDA9B58BA36655E3 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC267049277AB08520EAF4CB5D0543 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m */; };
-		5E198C52A872F99BB731221B37DA51C7 /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A54C854B321395D8C61FBE2F36E2D37F /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC8C86F7AF9231D58ABB40BB07FDF1EF /* Pods-AddressAutocompletionPluginIntegrationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8089072E38975ED141DF9E530A23249 /* Pods-AddressAutocompletionPluginIntegrationApp-dummy.m */; };
-		D4E5498E7CFFC1CCE8C0ED33B79564DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D9029D2DBCBD3251BE03D50ACC520F15 /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE044B85209E1C851945C63678C41D74 /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBE5F1C683495F4D44352067E56DC744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		14D50EDAF050BFCFAEDC42C4C677CF36 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC267049277AB08520EAF4CB5D0543 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m */; };
+		2363BE661B592193D753DF0DBD89C55E /* Pods-AddressAutocompletionPluginIntegrationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8089072E38975ED141DF9E530A23249 /* Pods-AddressAutocompletionPluginIntegrationApp-dummy.m */; };
+		5B0421C7A62EC539746F1DAC73604006 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		74C7DA8DF2F82C2DAD3637DD3823E3F8 /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A54C854B321395D8C61FBE2F36E2D37F /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DBDFA6E2DFF6BD20846AF2D002252AB /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE044B85209E1C851945C63678C41D74 /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E86CD38A03DBD36A30D1EA9992987AE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B3E90336A3E3E143E09D2FD6BFB6669 /* PBXContainerItemProxy */ = {
+		59C1C6A932272E174A23CE9B3CF04069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36DC2FE70682CB5EFB03AE60B862AC7C;
+			remoteInfo = "sonect-core-ios";
+		};
+		B0885C3F27B2774882BCD4ED70CA01B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36DC2FE70682CB5EFB03AE60B862AC7C;
+			remoteInfo = "sonect-core-ios";
+		};
+		EE107C5FD584D8A0DE4D60D9257A6E0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0EC587CF615156B5AAA458C3E5404B39;
 			remoteInfo = "sonect-shop-sdk-ios";
 		};
-		D1E2238C7563B8448A38E40A3D15FD50 /* PBXContainerItemProxy */ = {
+		F3287865C1594096F62841D31DDD5068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -45,25 +68,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0141C0C4BC86765C2BF4B82027E4F23B /* sonect-core-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-core-ios.release.xcconfig"; sourceTree = "<group>"; };
 		0BF1F559E61940B9746E899F321D0F3A /* Pods-AddressAutocompletionPluginIntegrationApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AddressAutocompletionPluginIntegrationApp.modulemap"; sourceTree = "<group>"; };
-		0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.xcconfig"; sourceTree = "<group>"; };
 		1125E65D6E68C3BF2755A1C9CC45ED77 /* Pods-AddressAutocompletionPluginIntegrationApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AddressAutocompletionPluginIntegrationApp-frameworks.sh"; sourceTree = "<group>"; };
 		11A8AE4CDB275B511DAEF68E9CD6C8BC /* Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
 		199C57EC759347C418292BC8F077DE5D /* Pods-GoogleAddressAutocompletionPlugin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleAddressAutocompletionPlugin-acknowledgements.markdown"; sourceTree = "<group>"; };
 		19EA4F02E0486C86E28F3D0756642974 /* Pods-GoogleAddressAutocompletionPlugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoogleAddressAutocompletionPlugin.modulemap"; sourceTree = "<group>"; };
+		1B0B60CACF9328BD4E537092C63EA0B5 /* sonect-core-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-core-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		2482E03D7E5116BB573502D255D9C00A /* Pods-AddressAutocompletionPluginIntegrationApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AddressAutocompletionPluginIntegrationApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		28C7F4DB7A658A8F88E8C25F4039A771 /* Pods-AddressAutocompletionPluginIntegrationApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AddressAutocompletionPluginIntegrationApp-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		519551166E459931D8F608954490F534 /* Pods-AddressAutocompletionPluginIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AddressAutocompletionPluginIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5219BF476317F7DF33FEA39A39861B86 /* sonect-shop-sdk-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.release.xcconfig"; sourceTree = "<group>"; };
 		66FA7B37EC1D5E5EE011271635ED87C6 /* Pods-GoogleAddressAutocompletionPlugin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleAddressAutocompletionPlugin-Info.plist"; sourceTree = "<group>"; };
 		6E23615F574CF52B4C19A57A7B519B36 /* Pods-AddressAutocompletionPluginIntegrationApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AddressAutocompletionPluginIntegrationApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89591AE7974645E2552B99728D36ABF3 /* sonect-shop-sdk-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		8F183DF172FB1340D3207E3105DEE643 /* Pods-GoogleAddressAutocompletionPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAddressAutocompletionPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A372489C9BB0E1F2C48ADEF65C4DB501 /* SonectCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonectCore.framework; sourceTree = "<group>"; };
 		A3B7D403127BFF7E3A0B022313707098 /* Pods_AddressAutocompletionPluginIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AddressAutocompletionPluginIntegrationApp.framework; path = "Pods-AddressAutocompletionPluginIntegrationApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54C854B321395D8C61FBE2F36E2D37F /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h"; sourceTree = "<group>"; };
-		AD44F35869816163D3A90A87D2AE5C7E /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonectShop.framework; sourceTree = "<group>"; };
 		BFEFB7E776736653BC2F71F1772C112C /* Pods-GoogleAddressAutocompletionPlugin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleAddressAutocompletionPlugin-acknowledgements.plist"; sourceTree = "<group>"; };
 		C5687BD80EC1CEEF41CE7D770976E261 /* Pods_GoogleAddressAutocompletionPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoogleAddressAutocompletionPlugin.framework; path = "Pods-GoogleAddressAutocompletionPlugin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE881FF4FAD0D8B5A04C5A58D683AB0 /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonectShop.framework; sourceTree = "<group>"; };
 		DFFC267049277AB08520EAF4CB5D0543 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleAddressAutocompletionPlugin-dummy.m"; sourceTree = "<group>"; };
 		E6700D2D506DACD61D3495284411EB5C /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		EE044B85209E1C851945C63678C41D74 /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoogleAddressAutocompletionPlugin-umbrella.h"; sourceTree = "<group>"; };
@@ -71,25 +98,53 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		69253196A1DDBF5813B786E2D48B1B8A /* Frameworks */ = {
+		474E45BE5636EC59AC780CFA85203B48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE5F1C683495F4D44352067E56DC744 /* Foundation.framework in Frameworks */,
+				E86CD38A03DBD36A30D1EA9992987AE1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A264D011B2AC74193A5F14A18F6C0F0C /* Frameworks */ = {
+		7426F1F1EF960BAD44C0CBD3652BB8C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4E5498E7CFFC1CCE8C0ED33B79564DC /* Foundation.framework in Frameworks */,
+				5B0421C7A62EC539746F1DAC73604006 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2DA477476E1E0F87C6A4459D217BB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89591AE7974645E2552B99728D36ABF3 /* sonect-shop-sdk-ios.debug.xcconfig */,
+				5219BF476317F7DF33FEA39A39861B86 /* sonect-shop-sdk-ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sonect-shop-sdk-ios";
+			sourceTree = "<group>";
+		};
+		101EB2E3314EA8CF0535E80D2DA1B5C2 /* sonect-shop-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				633ECACF5008E3451645B41C6B9F7122 /* Frameworks */,
+				0C2DA477476E1E0F87C6A4459D217BB5 /* Support Files */,
+			);
+			name = "sonect-shop-sdk-ios";
+			path = "sonect-shop-sdk-ios";
+			sourceTree = "<group>";
+		};
+		186F027D0455E678119834903F4C436E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A372489C9BB0E1F2C48ADEF65C4DB501 /* SonectCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DA7BDF7DC1758AF4119F552515C5622 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,29 +154,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47981D395C109673ED2C7366E83AF847 /* Frameworks */ = {
+		633ECACF5008E3451645B41C6B9F7122 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD44F35869816163D3A90A87D2AE5C7E /* SonectShop.framework */,
+				DEE881FF4FAD0D8B5A04C5A58D683AB0 /* SonectShop.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6DB5E82A06326DF58A8BC37DD55F41ED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/sonect-shop-sdk-ios";
-			sourceTree = "<group>";
-		};
-		6EF043A84F7ECFFE38CA928AB85BC26D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7AAFB9866111ACB9346F7834BCB345C0 /* sonect-shop-sdk-ios */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		6FCC8E9E697264D91C5F7288B803F31C /* Targets Support Files */ = {
@@ -133,14 +171,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7AAFB9866111ACB9346F7834BCB345C0 /* sonect-shop-sdk-ios */ = {
+		97AABC1A611D9CFC582334ADADCCD420 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				47981D395C109673ED2C7366E83AF847 /* Frameworks */,
-				6DB5E82A06326DF58A8BC37DD55F41ED /* Support Files */,
+				A4F3302027E6DD1139102704C3047F95 /* sonect-core-ios */,
+				101EB2E3314EA8CF0535E80D2DA1B5C2 /* sonect-shop-sdk-ios */,
 			);
-			name = "sonect-shop-sdk-ios";
-			path = "sonect-shop-sdk-ios";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4F3302027E6DD1139102704C3047F95 /* sonect-core-ios */ = {
+			isa = PBXGroup;
+			children = (
+				186F027D0455E678119834903F4C436E /* Frameworks */,
+				C1C2A0C6F0ED18332176E294AB6BEC33 /* Support Files */,
+			);
+			name = "sonect-core-ios";
+			path = "sonect-core-ios";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -149,6 +196,16 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1C2A0C6F0ED18332176E294AB6BEC33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B0B60CACF9328BD4E537092C63EA0B5 /* sonect-core-ios.debug.xcconfig */,
+				0141C0C4BC86765C2BF4B82027E4F23B /* sonect-core-ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sonect-core-ios";
 			sourceTree = "<group>";
 		};
 		C61591C13881A03CECA6FB65093A01F1 /* Pods-AddressAutocompletionPluginIntegrationApp */ = {
@@ -173,7 +230,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6EF043A84F7ECFFE38CA928AB85BC26D /* Pods */,
+				97AABC1A611D9CFC582334ADADCCD420 /* Pods */,
 				2DA7BDF7DC1758AF4119F552515C5622 /* Products */,
 				6FCC8E9E697264D91C5F7288B803F31C /* Targets Support Files */,
 			);
@@ -206,19 +263,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6C1F0E4EA48E4F9065FB6156B82171B9 /* Headers */ = {
+		17E12BBBEB9308E7898081D3851137C5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9029D2DBCBD3251BE03D50ACC520F15 /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h in Headers */,
+				8DBDFA6E2DFF6BD20846AF2D002252AB /* Pods-GoogleAddressAutocompletionPlugin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A38B82AD95D205BEC9C1A3AA36FADBA2 /* Headers */ = {
+		6DFED0A44651CA3BF05157BF0707AA52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E198C52A872F99BB731221B37DA51C7 /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h in Headers */,
+				74C7DA8DF2F82C2DAD3637DD3823E3F8 /* Pods-AddressAutocompletionPluginIntegrationApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,17 +284,18 @@
 /* Begin PBXNativeTarget section */
 		861E4C5984390D2FBD068BBFE34D19D1 /* Pods-AddressAutocompletionPluginIntegrationApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAAF8ACD41674712CC2F5F33F3DC6EA9 /* Build configuration list for PBXNativeTarget "Pods-AddressAutocompletionPluginIntegrationApp" */;
+			buildConfigurationList = 3CE0C050A7F386EA7CAED5013CA0BBD9 /* Build configuration list for PBXNativeTarget "Pods-AddressAutocompletionPluginIntegrationApp" */;
 			buildPhases = (
-				A38B82AD95D205BEC9C1A3AA36FADBA2 /* Headers */,
-				602AC707AE1B2DB3D2B17DBDF2CC436F /* Sources */,
-				A264D011B2AC74193A5F14A18F6C0F0C /* Frameworks */,
-				1CE5C10F8F4086F7CF8095847AF71F84 /* Resources */,
+				6DFED0A44651CA3BF05157BF0707AA52 /* Headers */,
+				35098C926A94A71AF9CE212C4A1F686A /* Sources */,
+				474E45BE5636EC59AC780CFA85203B48 /* Frameworks */,
+				78A2F417D04DFFB6E5F9218D8E745A27 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F0A517106725547D4FB43DD8D43C8DF8 /* PBXTargetDependency */,
+				7D99D8D2D60826A85677A0ABB8B148A9 /* PBXTargetDependency */,
+				54E0216CDCC6E1D9EA3C1E9C66641FF4 /* PBXTargetDependency */,
 			);
 			name = "Pods-AddressAutocompletionPluginIntegrationApp";
 			productName = "Pods-AddressAutocompletionPluginIntegrationApp";
@@ -246,17 +304,18 @@
 		};
 		A81C224A5D884D70DAFA5C91ECAFAE7E /* Pods-GoogleAddressAutocompletionPlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2274DCA58F985F8F551F30B20DC6BE0 /* Build configuration list for PBXNativeTarget "Pods-GoogleAddressAutocompletionPlugin" */;
+			buildConfigurationList = F528AC0EB37D563E179E4ED9E4A89579 /* Build configuration list for PBXNativeTarget "Pods-GoogleAddressAutocompletionPlugin" */;
 			buildPhases = (
-				6C1F0E4EA48E4F9065FB6156B82171B9 /* Headers */,
-				F9A1A60A8448E640DBC352407704EB41 /* Sources */,
-				69253196A1DDBF5813B786E2D48B1B8A /* Frameworks */,
-				C96B58D816C288EA0CC6694E9D0D6401 /* Resources */,
+				17E12BBBEB9308E7898081D3851137C5 /* Headers */,
+				84D93D05539A4469F0589087285B1F1B /* Sources */,
+				7426F1F1EF960BAD44C0CBD3652BB8C2 /* Frameworks */,
+				9EB4593AF36A8EE5ED5DB8143CFFF84E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B83D3DD34053EC349076693652694736 /* PBXTargetDependency */,
+				0C07081333F76741B42A62BF23585E08 /* PBXTargetDependency */,
+				2B0ACF477F71F49F78187001A8544561 /* PBXTargetDependency */,
 			);
 			name = "Pods-GoogleAddressAutocompletionPlugin";
 			productName = "Pods-GoogleAddressAutocompletionPlugin";
@@ -278,6 +337,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 2DA7BDF7DC1758AF4119F552515C5622 /* Products */;
@@ -286,20 +346,21 @@
 			targets = (
 				861E4C5984390D2FBD068BBFE34D19D1 /* Pods-AddressAutocompletionPluginIntegrationApp */,
 				A81C224A5D884D70DAFA5C91ECAFAE7E /* Pods-GoogleAddressAutocompletionPlugin */,
+				36DC2FE70682CB5EFB03AE60B862AC7C /* sonect-core-ios */,
 				0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CE5C10F8F4086F7CF8095847AF71F84 /* Resources */ = {
+		78A2F417D04DFFB6E5F9218D8E745A27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C96B58D816C288EA0CC6694E9D0D6401 /* Resources */ = {
+		9EB4593AF36A8EE5ED5DB8143CFFF84E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,46 +370,148 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		602AC707AE1B2DB3D2B17DBDF2CC436F /* Sources */ = {
+		35098C926A94A71AF9CE212C4A1F686A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC8C86F7AF9231D58ABB40BB07FDF1EF /* Pods-AddressAutocompletionPluginIntegrationApp-dummy.m in Sources */,
+				2363BE661B592193D753DF0DBD89C55E /* Pods-AddressAutocompletionPluginIntegrationApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9A1A60A8448E640DBC352407704EB41 /* Sources */ = {
+		84D93D05539A4469F0589087285B1F1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7D661856ABF046DDA9B58BA36655E3 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m in Sources */,
+				14D50EDAF050BFCFAEDC42C4C677CF36 /* Pods-GoogleAddressAutocompletionPlugin-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B83D3DD34053EC349076693652694736 /* PBXTargetDependency */ = {
+		0C07081333F76741B42A62BF23585E08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "sonect-shop-sdk-ios";
-			target = 0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */;
-			targetProxy = D1E2238C7563B8448A38E40A3D15FD50 /* PBXContainerItemProxy */;
+			name = "sonect-core-ios";
+			target = 36DC2FE70682CB5EFB03AE60B862AC7C /* sonect-core-ios */;
+			targetProxy = 59C1C6A932272E174A23CE9B3CF04069 /* PBXContainerItemProxy */;
 		};
-		F0A517106725547D4FB43DD8D43C8DF8 /* PBXTargetDependency */ = {
+		2B0ACF477F71F49F78187001A8544561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "sonect-shop-sdk-ios";
 			target = 0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */;
-			targetProxy = 1B3E90336A3E3E143E09D2FD6BFB6669 /* PBXContainerItemProxy */;
+			targetProxy = F3287865C1594096F62841D31DDD5068 /* PBXContainerItemProxy */;
+		};
+		54E0216CDCC6E1D9EA3C1E9C66641FF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sonect-shop-sdk-ios";
+			target = 0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */;
+			targetProxy = EE107C5FD584D8A0DE4D60D9257A6E0E /* PBXContainerItemProxy */;
+		};
+		7D99D8D2D60826A85677A0ABB8B148A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sonect-core-ios";
+			target = 36DC2FE70682CB5EFB03AE60B862AC7C /* sonect-core-ios */;
+			targetProxy = B0885C3F27B2774882BCD4ED70CA01B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1E08E092073F341BCDE36FBD5EBE23D6 /* Release */ = {
+		012B38BB10133FF12D9BE7AE1F0926B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A8AE4CDB275B511DAEF68E9CD6C8BC /* Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		221DC5BBE240DF38035D65A996F29555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0B60CACF9328BD4E537092C63EA0B5 /* sonect-core-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24EACD2B00B67F8581228F8D752B42A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519551166E459931D8F608954490F534 /* Pods-AddressAutocompletionPluginIntegrationApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E44DBC22402C0C36F1B0F354409AC1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F183DF172FB1340D3207E3105DEE643 /* Pods-GoogleAddressAutocompletionPlugin.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -360,7 +523,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,25 +545,104 @@
 			};
 			name = Release;
 		};
-		2D5726A38D057CB550330196E518DA55 /* Release */ = {
+		6620D677F73E97DCDBE2F9983EF7E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */;
+			baseConfigurationReference = E6700D2D506DACD61D3495284411EB5C /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -451,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -464,189 +706,30 @@
 			};
 			name = Debug;
 		};
-		B068CA2E0B3C39A36318C38FCF690B1F /* Debug */ = {
+		94E347CB517B249B5C8AFC19B938FBFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 519551166E459931D8F608954490F534 /* Pods-AddressAutocompletionPluginIntegrationApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CAD8297E0D367FB2661F37B9D5037BCD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11A8AE4CDB275B511DAEF68E9CD6C8BC /* Pods-AddressAutocompletionPluginIntegrationApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D076F88BF7F51D6FAEBCE8BCCC9BA40F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6700D2D506DACD61D3495284411EB5C /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoogleAddressAutocompletionPlugin/Pods-GoogleAddressAutocompletionPlugin.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		FDA8C933A68005B2DD27102AC4C6FB30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */;
+			baseConfigurationReference = 0141C0C4BC86765C2BF4B82027E4F23B /* sonect-core-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A800BC65BFA2E4E970A3D4B979FDC1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89591AE7974645E2552B99728D36ABF3 /* sonect-shop-sdk-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +738,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		CFA59D39A914A1196DE6EADF11C42B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5219BF476317F7DF33FEA39A39861B86 /* sonect-shop-sdk-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -662,8 +762,17 @@
 		2E0AE43A124E88F89B8CD3F276CDBC7E /* Build configuration list for PBXAggregateTarget "sonect-shop-sdk-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDA8C933A68005B2DD27102AC4C6FB30 /* Debug */,
-				2D5726A38D057CB550330196E518DA55 /* Release */,
+				A800BC65BFA2E4E970A3D4B979FDC1D9 /* Debug */,
+				CFA59D39A914A1196DE6EADF11C42B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE0C050A7F386EA7CAED5013CA0BBD9 /* Build configuration list for PBXNativeTarget "Pods-AddressAutocompletionPluginIntegrationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EACD2B00B67F8581228F8D752B42A9 /* Debug */,
+				012B38BB10133FF12D9BE7AE1F0926B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -671,26 +780,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
-				ECB437504DF805BD96CAABF97400B526 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAAF8ACD41674712CC2F5F33F3DC6EA9 /* Build configuration list for PBXNativeTarget "Pods-AddressAutocompletionPluginIntegrationApp" */ = {
+		876793BB5323718576BEF8E56738F640 /* Build configuration list for PBXAggregateTarget "sonect-core-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B068CA2E0B3C39A36318C38FCF690B1F /* Debug */,
-				CAD8297E0D367FB2661F37B9D5037BCD /* Release */,
+				221DC5BBE240DF38035D65A996F29555 /* Debug */,
+				94E347CB517B249B5C8AFC19B938FBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2274DCA58F985F8F551F30B20DC6BE0 /* Build configuration list for PBXNativeTarget "Pods-GoogleAddressAutocompletionPlugin" */ = {
+		F528AC0EB37D563E179E4ED9E4A89579 /* Build configuration list for PBXNativeTarget "Pods-GoogleAddressAutocompletionPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D076F88BF7F51D6FAEBCE8BCCC9BA40F /* Debug */,
-				1E08E092073F341BCDE36FBD5EBE23D6 /* Release */,
+				6620D677F73E97DCDBE2F9983EF7E8F1 /* Debug */,
+				2E44DBC22402C0C36F1B0F354409AC1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

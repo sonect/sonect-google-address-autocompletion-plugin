@@ -28,6 +28,7 @@
 		7FE44F162448A94F00DE22F0 /* SNCGoogleShopDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE44F122448A94F00DE22F0 /* SNCGoogleShopDetails.m */; };
 		7FE44F172448A94F00DE22F0 /* SNCGoogleShopSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE44F132448A94F00DE22F0 /* SNCGoogleShopSearch.h */; };
 		7FE44F182448A94F00DE22F0 /* SNCGoogleShopSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE44F142448A94F00DE22F0 /* SNCGoogleShopSearch.m */; };
+		B1B3B592856CA0D266F9EED7 /* Pods_GoogleAddressAutocompletionPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF73DD2BADE8A2A9DB11B4 /* Pods_GoogleAddressAutocompletionPlugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B3B592856CA0D266F9EED7 /* Pods_GoogleAddressAutocompletionPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +537,7 @@
 			baseConfigurationReference = 12EDE3ABA90989E5C9378387 /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -553,7 +555,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonect.GoogleAddressAutocompletionPlugin.GoogleAddressAutocompletionPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -566,7 +568,7 @@
 			baseConfigurationReference = 51FEBA9381F25A0C58B6C300 /* Pods-GoogleAddressAutocompletionPlugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -584,7 +586,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonect.GoogleAddressAutocompletionPlugin.GoogleAddressAutocompletionPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
