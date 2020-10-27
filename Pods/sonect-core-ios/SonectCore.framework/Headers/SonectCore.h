@@ -22,3 +22,6 @@ FOUNDATION_EXPORT const unsigned char SonectCoreVersionString[];
 
 #import <SonectCore/SNCOpeningHours.h>
 #import <SonectCore/SNCCalendarUtilities.h>
+
+#import <SonectCore/SNCLogging.h>
+#import <SonectCore/SNCLoggingSwift.h>

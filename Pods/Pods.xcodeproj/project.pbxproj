@@ -9,10 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2E0AE43A124E88F89B8CD3F276CDBC7E /* Build configuration list for PBXAggregateTarget "sonect-shop-sdk-ios" */;
+			buildConfigurationList = E0427B7A299885B543B5B538FE64228D /* Build configuration list for PBXAggregateTarget "sonect-shop-sdk-ios" */;
 			buildPhases = (
 			);
 			dependencies = (
+				2603A31EEA3422C2CE6AABFEDE4E7494 /* PBXTargetDependency */,
 			);
 			name = "sonect-shop-sdk-ios";
 		};
@@ -45,6 +46,13 @@
 			remoteInfo = "sonect-core-ios";
 		};
 		B0885C3F27B2774882BCD4ED70CA01B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36DC2FE70682CB5EFB03AE60B862AC7C;
+			remoteInfo = "sonect-core-ios";
+		};
+		BB139B39CF480ED76E4A7D0B073F4D5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -395,6 +403,12 @@
 			target = 36DC2FE70682CB5EFB03AE60B862AC7C /* sonect-core-ios */;
 			targetProxy = 59C1C6A932272E174A23CE9B3CF04069 /* PBXContainerItemProxy */;
 		};
+		2603A31EEA3422C2CE6AABFEDE4E7494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sonect-core-ios";
+			target = 36DC2FE70682CB5EFB03AE60B862AC7C /* sonect-core-ios */;
+			targetProxy = BB139B39CF480ED76E4A7D0B073F4D5C /* PBXContainerItemProxy */;
+		};
 		2B0ACF477F71F49F78187001A8544561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "sonect-shop-sdk-ios";
@@ -545,6 +559,23 @@
 			};
 			name = Release;
 		};
+		3605D742D8239CBA7118A4E3BFE4366A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5219BF476317F7DF33FEA39A39861B86 /* sonect-shop-sdk-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		6620D677F73E97DCDBE2F9983EF7E8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6700D2D506DACD61D3495284411EB5C /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
@@ -579,6 +610,22 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B5E1BC9B9797ABC963EB185AC25F542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89591AE7974645E2552B99728D36ABF3 /* sonect-shop-sdk-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -723,51 +770,9 @@
 			};
 			name = Release;
 		};
-		A800BC65BFA2E4E970A3D4B979FDC1D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89591AE7974645E2552B99728D36ABF3 /* sonect-shop-sdk-ios.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CFA59D39A914A1196DE6EADF11C42B72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5219BF476317F7DF33FEA39A39861B86 /* sonect-shop-sdk-ios.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E0AE43A124E88F89B8CD3F276CDBC7E /* Build configuration list for PBXAggregateTarget "sonect-shop-sdk-ios" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A800BC65BFA2E4E970A3D4B979FDC1D9 /* Debug */,
-				CFA59D39A914A1196DE6EADF11C42B72 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3CE0C050A7F386EA7CAED5013CA0BBD9 /* Build configuration list for PBXNativeTarget "Pods-AddressAutocompletionPluginIntegrationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -791,6 +796,15 @@
 			buildConfigurations = (
 				221DC5BBE240DF38035D65A996F29555 /* Debug */,
 				94E347CB517B249B5C8AFC19B938FBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0427B7A299885B543B5B538FE64228D /* Build configuration list for PBXAggregateTarget "sonect-shop-sdk-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B5E1BC9B9797ABC963EB185AC25F542 /* Debug */,
+				3605D742D8239CBA7118A4E3BFE4366A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

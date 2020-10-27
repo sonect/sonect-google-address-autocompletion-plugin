@@ -38,9 +38,9 @@ class ViewController: UIViewController {
         
         plugin.shopDetails(forShopId: "ChIJP3A3D_OEqkARikTSnZhYMhw") { (details, error) in
             print(String(describing: details))
-//            self.imageView.image = details.shopImage
+            self.imageView.image = details?.shopImage
         }
-    }//
+    }
     
     @objc func searchChanged(_ sender: Any) {
         guard let searchTerm = searchTextField.text else {

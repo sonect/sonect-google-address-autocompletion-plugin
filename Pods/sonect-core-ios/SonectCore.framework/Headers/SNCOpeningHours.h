@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) SNCDayTime *open;
 @property (nonatomic, copy, readonly) SNCDayTime *close;
+@property (nonatomic, readonly) BOOL isClosed;
 
 - (instancetype)initWithOpeningTime:(SNCDayTime *)openingTime andClosingTime:(SNCDayTime *)closingTime;
 

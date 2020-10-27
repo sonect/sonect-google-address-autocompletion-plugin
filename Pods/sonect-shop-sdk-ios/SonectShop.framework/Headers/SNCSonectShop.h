@@ -69,6 +69,13 @@ NS_ASSUME_NONNULL_BEGIN
                  configuration:(SNCShopConfiguration *)configuration
       presentingViewController:(UIViewController *)presentingViewController;
 
+/**
+ Dismiss the Sonect Shop View Controller programatically.
+ @discussion The SDK navigation dismisses naturally itself by user interaction.
+ You shouldn't call this method unless absolutely necessary for scenarios like Logout etc.
+ */
++ (void)dismiss;
+
 @end
 
 NS_ASSUME_NONNULL_END

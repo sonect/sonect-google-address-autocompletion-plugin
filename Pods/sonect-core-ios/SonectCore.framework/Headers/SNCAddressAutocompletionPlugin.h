@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, readonly) id <SNCAddressDetails> address;
 @property (copy, readonly) SNCOpeningHours *openingHours;
 @property (copy, readonly) NSArray <NSString*> *types;
+@property (copy, nullable, readonly) UIImage *shopImage;
 @end
 
 @protocol SNCShopCandidate <NSObject>
