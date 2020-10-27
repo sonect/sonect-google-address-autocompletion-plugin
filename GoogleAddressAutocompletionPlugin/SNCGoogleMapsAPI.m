@@ -18,14 +18,14 @@ static NSString *placeDetails = @"https://maps.googleapis.com/maps/api/place/det
 static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/textsearch/json";
 static NSString *placePhoto = @"https://maps.googleapis.com/maps/api/place/photo";
 
-static CGFloat defaultImageMaxWidth = 1000;
+static CGFloat defaultImageMaxWidth = 1024;
 
 @implementation SNCGoogleMapsAPI
 
 + (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
                      googleApiKey:(NSString *)key
-                completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)compleionHandler {
+                completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)completionHandler {
 
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:addressAutocomplete];
     serviceUrl.queryItems = @[
@@ -43,7 +43,7 @@ static CGFloat defaultImageMaxWidth = 1000;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -54,14 +54,14 @@ static CGFloat defaultImageMaxWidth = 1000;
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
             SNCGoogleAutocompleteAddresses *autocompletedAddresses = [[SNCGoogleAutocompleteAddresses alloc] initWithDictionary:dictionary];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(autocompletedAddresses, nil);
+                completionHandler(autocompletedAddresses, nil);
             });
             
             return;
@@ -71,7 +71,7 @@ static CGFloat defaultImageMaxWidth = 1000;
 
 + (void)getPlaceDetailsForPlaceId:(NSString *)placeId
                      googleApiKey:(NSString *)key
-                completionHandler:(SNCGooglePlaceDetailsCompletionHandler)compleionHandler {
+                completionHandler:(SNCGooglePlaceDetailsCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
     serviceUrl.queryItems = @[
         [NSURLQueryItem queryItemWithName:@"placeid" value:placeId],
@@ -87,7 +87,7 @@ static CGFloat defaultImageMaxWidth = 1000;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -98,14 +98,14 @@ static CGFloat defaultImageMaxWidth = 1000;
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
             SNCGooglePlaceDetails *placeDetails = [[SNCGooglePlaceDetails alloc] initWithDictionary:dictionary];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(placeDetails, nil);
+                completionHandler(placeDetails, nil);
             });
             
             return;
@@ -116,7 +116,7 @@ static CGFloat defaultImageMaxWidth = 1000;
 + (void)getShopsForSearchTerm:(NSString *)searchTerm
                   countryCode:(NSString *)countryCode
                  googleApiKey:(NSString *)key
-            completionHandler:(SNCGoogleShopSearchCompletionHandler)compleionHandler {
+            completionHandler:(SNCGoogleShopSearchCompletionHandler)completionHandler {
     
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:addressAutocomplete];
     serviceUrl.queryItems = @[
@@ -134,7 +134,7 @@ static CGFloat defaultImageMaxWidth = 1000;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -145,14 +145,14 @@ static CGFloat defaultImageMaxWidth = 1000;
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
             SNCGoogleShopSearch *searchShop = [[SNCGoogleShopSearch alloc] initWithDictionary:dictionary];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(searchShop, nil);
+                completionHandler(searchShop, nil);
             });
             
             return;
@@ -162,7 +162,7 @@ static CGFloat defaultImageMaxWidth = 1000;
 
 + (void)getShopDetailsForShopId:(NSString *)placeId
                    googleApiKey:(NSString *)key
-              completionHandler:(SNCGoogleShopDetailsCompletionHandler)compleionHandler {
+              completionHandler:(SNCGoogleShopDetailsCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
     serviceUrl.queryItems = @[
         [NSURLQueryItem queryItemWithName:@"placeid" value:placeId],
@@ -178,7 +178,7 @@ static CGFloat defaultImageMaxWidth = 1000;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -189,7 +189,7 @@ static CGFloat defaultImageMaxWidth = 1000;
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
@@ -202,13 +202,13 @@ static CGFloat defaultImageMaxWidth = 1000;
                           completionHandler:^(UIImage * _Nullable image, NSError * _Nullable error) {
                     SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary shopImage:image];
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        compleionHandler(placeDetails, nil);
+                        completionHandler(placeDetails, nil);
                     });
                 }];
             } else {
                 SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary shopImage:nil];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    compleionHandler(placeDetails, nil);
+                    completionHandler(placeDetails, nil);
                 });
             }
             
@@ -220,7 +220,7 @@ static CGFloat defaultImageMaxWidth = 1000;
 + (void)getPhotoFromReference:(NSString *)photoReference
                      maxWidth:(CGFloat)maxWidth
                    googleApiKey:(NSString *)key
-            completionHandler:(SNCGooglePlacePhotoCompletionHandler)compleionHandler {
+            completionHandler:(SNCGooglePlacePhotoCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placePhoto];
     
     serviceUrl.queryItems = @[
@@ -236,7 +236,7 @@ static CGFloat defaultImageMaxWidth = 1000;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -245,9 +245,9 @@ static CGFloat defaultImageMaxWidth = 1000;
             UIImage *image = [UIImage imageWithData:data];
             
             if (image) {
-                compleionHandler(image, nil);
+                completionHandler(image, nil);
             } else {
-                compleionHandler(nil, [NSError errorWithDomain:NSNetServicesErrorDomain code:100 userInfo:nil]);
+                completionHandler(nil, [NSError errorWithDomain:NSNetServicesErrorDomain code:100 userInfo:nil]);
             }
         }
     }] resume];
