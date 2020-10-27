@@ -10,12 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SNCShopAddress, SNCOpeningHours;
+@class SNCAddress, SNCOpeningHours;
 
 typedef void(^SNCShopOnboardingStringCallback)(NSString *);
 typedef void(^SNCShopOnboardingUIntegerCallback)(NSUInteger);
-typedef void(^SNCShopOnboardingAddressCallback)(SNCShopAddress *);
-typedef void(^SNCShopOnboardingNameAndAddressCallback)(NSString *, SNCShopAddress *);
+typedef void(^SNCShopOnboardingAddressCallback)(SNCAddress *);
+typedef void(^SNCShopOnboardingNameAndAddressCallback)(NSString *, SNCAddress *);
 typedef void(^SNCShopOnboardingOpeningHoursCallback)(SNCOpeningHours *);
 
 @protocol SNCShopOnboardingDataSource <NSObject>

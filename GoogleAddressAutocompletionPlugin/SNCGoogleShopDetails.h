@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SNCOpeningHours;
+@class SNCOpeningHours, UIImage;
 
 //Marking a forward protocol helps fix the problem with imports.
 #pragma clang diagnostic push
@@ -22,9 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, readonly) NSString *name;
 @property (copy, readonly) id <SNCAddressDetails> address;
 @property (copy, readonly) SNCOpeningHours *openingHours;
+@property (copy, readonly) UIImage *shopImage;
 @property (nonatomic, copy, readonly) NSArray <NSString*> *types;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary shopImage:(nullable UIImage *)shopImage;
 
 @end
 

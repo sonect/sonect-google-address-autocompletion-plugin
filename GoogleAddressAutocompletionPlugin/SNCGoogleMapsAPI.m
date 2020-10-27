@@ -6,6 +6,7 @@
 //  Copyright © 2020 Sonect. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "SNCGoogleMapsAPI.h"
 #import "SNCGoogleAutocompleteAddresses.h"
 #import "SNCGooglePlaceDetails.h"
@@ -15,13 +16,16 @@
 static NSString *addressAutocomplete = @"https://maps.googleapis.com/maps/api/place/autocomplete/json";
 static NSString *placeDetails = @"https://maps.googleapis.com/maps/api/place/details/json";
 static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/textsearch/json";
+static NSString *placePhoto = @"https://maps.googleapis.com/maps/api/place/photo";
+
+static CGFloat defaultImageMaxWidth = 1024;
 
 @implementation SNCGoogleMapsAPI
 
 + (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
                      googleApiKey:(NSString *)key
-                completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)compleionHandler {
+                completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)completionHandler {
 
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:addressAutocomplete];
     serviceUrl.queryItems = @[
@@ -39,7 +43,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -50,14 +54,14 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
             SNCGoogleAutocompleteAddresses *autocompletedAddresses = [[SNCGoogleAutocompleteAddresses alloc] initWithDictionary:dictionary];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(autocompletedAddresses, nil);
+                completionHandler(autocompletedAddresses, nil);
             });
             
             return;
@@ -67,7 +71,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
 
 + (void)getPlaceDetailsForPlaceId:(NSString *)placeId
                      googleApiKey:(NSString *)key
-                completionHandler:(SNCGooglePlaceDetailsCompletionHandler)compleionHandler {
+                completionHandler:(SNCGooglePlaceDetailsCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
     serviceUrl.queryItems = @[
         [NSURLQueryItem queryItemWithName:@"placeid" value:placeId],
@@ -83,7 +87,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -94,14 +98,14 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
             SNCGooglePlaceDetails *placeDetails = [[SNCGooglePlaceDetails alloc] initWithDictionary:dictionary];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(placeDetails, nil);
+                completionHandler(placeDetails, nil);
             });
             
             return;
@@ -112,7 +116,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
 + (void)getShopsForSearchTerm:(NSString *)searchTerm
                   countryCode:(NSString *)countryCode
                  googleApiKey:(NSString *)key
-            completionHandler:(SNCGoogleShopSearchCompletionHandler)compleionHandler {
+            completionHandler:(SNCGoogleShopSearchCompletionHandler)completionHandler {
     
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:addressAutocomplete];
     serviceUrl.queryItems = @[
@@ -130,7 +134,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -141,14 +145,14 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
             SNCGoogleShopSearch *searchShop = [[SNCGoogleShopSearch alloc] initWithDictionary:dictionary];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(searchShop, nil);
+                completionHandler(searchShop, nil);
             });
             
             return;
@@ -158,7 +162,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
 
 + (void)getShopDetailsForShopId:(NSString *)placeId
                    googleApiKey:(NSString *)key
-              completionHandler:(SNCGoogleShopDetailsCompletionHandler)compleionHandler {
+              completionHandler:(SNCGoogleShopDetailsCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
     serviceUrl.queryItems = @[
         [NSURLQueryItem queryItemWithName:@"placeid" value:placeId],
@@ -174,7 +178,7 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(nil, error);
+                completionHandler(nil, error);
             });
             return;
         }
@@ -185,19 +189,72 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                compleionHandler(nil, parsingError);
+                completionHandler(nil, parsingError);
                 return;
             }
             
-            SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary];
+            NSString *photoReference = [self firstPhotoReferenceFromDetailsDictionary:dictionary];
             
-            dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(placeDetails, nil);
-            });
+            if (photoReference) {
+                [self getPhotoFromReference:photoReference
+                                   maxWidth:defaultImageMaxWidth
+                               googleApiKey:key
+                          completionHandler:^(UIImage * _Nullable image, NSError * _Nullable error) {
+                    SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary shopImage:image];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        completionHandler(placeDetails, nil);
+                    });
+                }];
+            } else {
+                SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary shopImage:nil];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completionHandler(placeDetails, nil);
+                });
+            }
             
             return;
         }
     }] resume];
+}
+
++ (void)getPhotoFromReference:(NSString *)photoReference
+                     maxWidth:(CGFloat)maxWidth
+                   googleApiKey:(NSString *)key
+            completionHandler:(SNCGooglePlacePhotoCompletionHandler)completionHandler {
+    NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placePhoto];
+    
+    serviceUrl.queryItems = @[
+        [NSURLQueryItem queryItemWithName:@"photoreference" value:photoReference],
+        [NSURLQueryItem queryItemWithName:@"maxwidth" value:[NSString stringWithFormat:@"%.0f", maxWidth]],
+        [NSURLQueryItem queryItemWithName:@"key" value:key],
+    ];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:serviceUrl.URL];
+    request.HTTPMethod = @"GET";
+    
+    NSURLSession *session = NSURLSession.sharedSession;
+    [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionHandler(nil, error);
+            });
+            return;
+        }
+        
+        if (data) {
+            UIImage *image = [UIImage imageWithData:data];
+            
+            if (image) {
+                completionHandler(image, nil);
+            } else {
+                completionHandler(nil, [NSError errorWithDomain:NSNetServicesErrorDomain code:100 userInfo:nil]);
+            }
+        }
+    }] resume];
+}
+
++ (nullable NSString *)firstPhotoReferenceFromDetailsDictionary:(NSDictionary *)dictionary {
+    return [[dictionary[@"result"][@"photos"] firstObject][@"photo_reference"] copy];
 }
 
 @end

@@ -1,6 +1,7 @@
 PODS:
-  - sonect-core-ios (1.0.2)
-  - sonect-shop-sdk-ios (1.2.12)
+  - sonect-core-ios (1.0.8)
+  - sonect-shop-sdk-ios (1.5.1):
+    - sonect-core-ios
 
 DEPENDENCIES:
   - sonect-core-ios
@@ -12,8 +13,8 @@ SPEC REPOS:
     - sonect-shop-sdk-ios
 
 SPEC CHECKSUMS:
-  sonect-core-ios: 0a3613ab6835092e1167eb7eb68950805fc0f599
-  sonect-shop-sdk-ios: a725efdd11cbab7c743c143049d06e1b8098f27a
+  sonect-core-ios: 3126c3df431e7e7771b62fa3e48ad53ed4f28f34
+  sonect-shop-sdk-ios: 52a295296a03d659586133300c08317df6967497
 
 PODFILE CHECKSUM: 85c8d89dc2977b68d3d5bd91bb471165079b3b5e
 

@@ -69,6 +69,11 @@ typedef NS_ENUM(NSUInteger, SNCThemeType) {
 @property (nonatomic, nullable) UIColor *backButtonColor;
 
 /**
+The title color of withdraw confirm button.
+*/
+@property (nonatomic, nullable) UIColor *confirmButtonTitleColor;
+
+/**
  The color selected amount. For default denominations, order of colors in amount picker is as follows:
  0 - 20
  1 - 50

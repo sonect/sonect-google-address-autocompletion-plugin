@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var apiKeyTextField: UITextField!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var runPluginButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,11 @@ class ViewController: UIViewController {
         
         plugin.shops(forSearchTerm: "дар", countryCode: "BG") { (shopSearch, error) in
             print(String(describing: shopSearch))
+        }
+        
+        plugin.shopDetails(forShopId: "ChIJP3A3D_OEqkARikTSnZhYMhw") { (details, error) in
+            print(String(describing: details))
+            self.imageView.image = details?.shopImage
         }
     }
     
