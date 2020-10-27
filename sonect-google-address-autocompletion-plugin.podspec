@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "sonect-google-address-autocompletion-plugin"
-    spec.version      = "1.0.10"
+    spec.version      = "1.0.11"
     spec.summary      = "Sonect Google Address Autocompletion Plugin"
     spec.description  = <<-DESC
     This is the Sonect Google Address Autocompletion Plugin public podspec. 
