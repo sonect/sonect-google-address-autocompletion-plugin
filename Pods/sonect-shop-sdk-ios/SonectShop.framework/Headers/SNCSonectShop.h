@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SNCShopConfiguration, SNCShopCredentials, UIViewController;
-@protocol SNCScanCodePlugin, SNCKycProviderPlugin, SNCShopOnboardingDataSource, SNCAddressAutocompletionPlugin;
+@protocol SNCScanCodePlugin, SNCKycProviderPlugin, SNCShopOnboardingDataSource, SNCAddressAutocompletionPlugin, SNCSonectShopEventHandler, SNCShopPresentationDelegate;
 
 @interface SNCSonectShop : NSObject
 
@@ -44,6 +44,17 @@ NS_ASSUME_NONNULL_BEGIN
  The data source for shop onboarding.
 */
 @property (class, nullable) id <SNCShopOnboardingDataSource> onboardingDataSource;
+
+/**
+ The Event handler.
+ The current Event handler that are passed through SDK
+*/
+@property(class, weak, nullable) id <SNCSonectShopEventHandler> eventHandler;
+
+/**
+ The presentation delegate being called on significant presntation events
+*/
+@property(class, weak, nullable) id <SNCShopPresentationDelegate> presentationDelegate;
 
 /**
  Presents the Sonect Shop View Controller on the presenting view controller, with credentials and

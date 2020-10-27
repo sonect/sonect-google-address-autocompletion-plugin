@@ -50,7 +50,7 @@ platform :ios do
 
     commitAndPush("Update latest User Public build")
 
-    pod_push
+    #pod_push
   
   end
 

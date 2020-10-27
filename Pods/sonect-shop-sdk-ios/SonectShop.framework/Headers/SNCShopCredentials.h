@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithSdkToken:(NSString *)sdkToken
                       merchantId:(NSString *)merchantId
-                       signature:(NSString * )signature
+                       signature:(NSString *)signature
                         deviceId:(NSString *)deviceId;
 
 @end

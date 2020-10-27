@@ -25,6 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, nullable, copy, readonly) NSString* currency;
 
 /**
+ The user's maximum amount for handing out cash on the shop.
+ */
+@property (nonatomic, nullable, copy, readonly) NSNumber *maximumCashHandoutAmount;
+
+/**
  Initializes the configuration with a designated configuration plist file.
 
  @param filePath a file path.
