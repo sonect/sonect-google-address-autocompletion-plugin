@@ -537,7 +537,7 @@
 			baseConfigurationReference = E327107AFCE8B90A9EDAEC3F /* Pods-GoogleAddressAutocompletionPlugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -555,7 +555,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
+				MARKETING_VERSION = 1.0.11;
 				OTHER_LDFLAGS = (
 					"-framework",
 					"\"SonectCore\"",
@@ -572,7 +572,7 @@
 			baseConfigurationReference = 1CA55D39A98036BAB6DA014C /* Pods-GoogleAddressAutocompletionPlugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ8Q6FKHZ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -590,7 +590,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.10;
+				MARKETING_VERSION = 1.0.11;
 				OTHER_LDFLAGS = (
 					"-framework",
 					"\"SonectCore\"",
