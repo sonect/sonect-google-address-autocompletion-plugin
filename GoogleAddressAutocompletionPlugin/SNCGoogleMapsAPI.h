@@ -10,12 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SNCGoogleAutocompleteAddresses, SNCGooglePlaceDetails, SNCGoogleShopSearch, SNCGoogleShopDetails;
+@class SNCGoogleAutocompleteAddresses, SNCGooglePlaceDetails, SNCGoogleShopSearch, SNCGoogleShopDetails, UIImage;
 
 typedef void(^SNCGoogleAddressAutocompletionCompletionHandler)(SNCGoogleAutocompleteAddresses * _Nullable, NSError * _Nullable);
 typedef void(^SNCGooglePlaceDetailsCompletionHandler)(SNCGooglePlaceDetails * _Nullable, NSError * _Nullable);
 typedef void(^SNCGoogleShopSearchCompletionHandler)(SNCGoogleShopSearch * _Nullable, NSError * _Nullable);
 typedef void(^SNCGoogleShopDetailsCompletionHandler)(SNCGoogleShopDetails * _Nullable, NSError * _Nullable);
+typedef void(^SNCGooglePlacePhotoCompletionHandler)(UIImage * _Nullable, NSError * _Nullable);
 
 @interface SNCGoogleMapsAPI : NSObject
 

@@ -6,6 +6,7 @@
 //  Copyright © 2020 Sonect. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "SNCGoogleMapsAPI.h"
 #import "SNCGoogleAutocompleteAddresses.h"
 #import "SNCGooglePlaceDetails.h"
@@ -15,6 +16,9 @@
 static NSString *addressAutocomplete = @"https://maps.googleapis.com/maps/api/place/autocomplete/json";
 static NSString *placeDetails = @"https://maps.googleapis.com/maps/api/place/details/json";
 static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/textsearch/json";
+static NSString *placePhoto = @"https://maps.googleapis.com/maps/api/place/photo";
+
+static CGFloat defaultImageMaxWidth = 1000;
 
 @implementation SNCGoogleMapsAPI
 
@@ -189,15 +193,68 @@ static NSString *textSearchPlace = @"https://maps.googleapis.com/maps/api/place/
                 return;
             }
             
-            SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary];
+            NSString *photoReference = [self firstPhotoReferenceFromDetailsDictionary:dictionary];
             
-            dispatch_async(dispatch_get_main_queue(), ^{
-                compleionHandler(placeDetails, nil);
-            });
+            if (photoReference) {
+                [self getPhotoFromReference:photoReference
+                                   maxWidth:defaultImageMaxWidth
+                               googleApiKey:key
+                          completionHandler:^(UIImage * _Nullable image, NSError * _Nullable error) {
+                    SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary shopImage:image];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        compleionHandler(placeDetails, nil);
+                    });
+                }];
+            } else {
+                SNCGoogleShopDetails *placeDetails = [[SNCGoogleShopDetails alloc] initWithDictionary:dictionary shopImage:nil];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    compleionHandler(placeDetails, nil);
+                });
+            }
             
             return;
         }
     }] resume];
+}
+
++ (void)getPhotoFromReference:(NSString *)photoReference
+                     maxWidth:(CGFloat)maxWidth
+                   googleApiKey:(NSString *)key
+            completionHandler:(SNCGooglePlacePhotoCompletionHandler)compleionHandler {
+    NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placePhoto];
+    
+    serviceUrl.queryItems = @[
+        [NSURLQueryItem queryItemWithName:@"photoreference" value:photoReference],
+        [NSURLQueryItem queryItemWithName:@"maxwidth" value:[NSString stringWithFormat:@"%.0f", maxWidth]],
+        [NSURLQueryItem queryItemWithName:@"key" value:key],
+    ];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:serviceUrl.URL];
+    request.HTTPMethod = @"GET";
+    
+    NSURLSession *session = NSURLSession.sharedSession;
+    [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                compleionHandler(nil, error);
+            });
+            return;
+        }
+        
+        if (data) {
+            UIImage *image = [UIImage imageWithData:data];
+            
+            if (image) {
+                compleionHandler(image, nil);
+            } else {
+                compleionHandler(nil, [NSError errorWithDomain:NSNetServicesErrorDomain code:100 userInfo:nil]);
+            }
+        }
+    }] resume];
+}
+
++ (nullable NSString *)firstPhotoReferenceFromDetailsDictionary:(NSDictionary *)dictionary {
+    return [[dictionary[@"result"][@"photos"] firstObject][@"photo_reference"] copy];
 }
 
 @end

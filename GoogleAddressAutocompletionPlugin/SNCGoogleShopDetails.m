@@ -13,7 +13,7 @@
 
 @implementation SNCGoogleShopDetails
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary shopImage:(nullable UIImage *)shopImage {
     self = [super init];
     if (self) {
         NSDictionary *resultDictionary = [dictionary[@"result"] copy];
@@ -21,6 +21,7 @@
         _name = [resultDictionary[@"name"] copy];
         _openingHours = [self parseOpeningHours:[resultDictionary[@"opening_hours"] copy]];
         _types = [resultDictionary[@"types"] copy];
+        _shopImage = shopImage;
     }
     
     return self;
