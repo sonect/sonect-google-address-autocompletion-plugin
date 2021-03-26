@@ -1,26 +1,26 @@
 platform :ios do
 
     def public_release(workspace, framework, repo, podspec)
-        xcversion(version: "11.7")
+        # xcversion(version: "11.7")
 
         cocoapods_archive = archive_framework_for_cocoapods(workspace, framework)
         cathage_archive = archive_framework_for_carthage(framework)
     
         version = get_version_number(
-          target: framework)
-    
+        target: framework)
+
         name = "Release " + version
         token = File.read("github.token")
-    
+
         upload_to_github(
-          token,
-          version, 
-          name,
-          "No changelog provided", 
-          repo,
-          [cocoapods_archive, cathage_archive]
+            token,
+            version,
+            name,
+            "No changelog provided",
+            repo,
+            [cocoapods_archive, cathage_archive]
         )
-    
+
         version_bump_podspec(path: podspec, version_number: version)
         pod_push
 
