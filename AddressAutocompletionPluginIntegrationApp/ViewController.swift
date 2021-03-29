@@ -32,6 +32,10 @@ class ViewController: UIViewController {
             print(String(describing: addressAutocompletion))
         }
         
+        plugin.adressDetails(forAddressId: "EhxMaXZlcnBvb2wgU3RyZWV0LCBMb25kb24sIFVLIi4qLAoUChIJqeLSXbIcdkgRqAbi6bi_PEcSFAoSCfPzF7dbG3ZIEQqyADl5LpFJ") { (details, error) in
+            print(String(describing: details))
+        }
+        
         plugin.shops(forSearchTerm: "дар", countryCode: "BG") { (shopSearch, error) in
             print(String(describing: shopSearch))
         }
