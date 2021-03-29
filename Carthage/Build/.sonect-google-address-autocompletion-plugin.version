@@ -1,9 +1,9 @@
 {
-  "commitish" : "aa29009c72f07c770be4bb8077189c5f7ec5f6fc",
+  "commitish" : "67d5c0e75d3600e9a5613543eb63709f2d103330",
   "iOS" : [
     {
       "name" : "GoogleAddressAutocompletionPlugin",
-      "hash" : "a06af84605d461b14167ef5a1354bc15b57b8c864d333a5af1a36d7ab8e97726",
+      "hash" : "9d1b9437b382e511372fd1f79d9a3a74c4a9377337583fbda8fd439d8de28e6e",
       "linking" : "dynamic"
     }
   ]
