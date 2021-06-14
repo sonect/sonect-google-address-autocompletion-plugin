@@ -36,6 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, readonly) SNCOpeningHours *openingHours;
 @property (copy, readonly) NSArray <NSString*> *types;
 @property (copy, nullable, readonly) UIImage *shopImage;
+@property (nonatomic, nullable, copy) NSString *vicinity;
+@property (nonatomic, copy) NSString *placeId;
+@property (nonatomic, copy, nullable) NSString *photoReference;
+
 @end
 
 @protocol SNCShopCandidate <NSObject>
@@ -49,6 +53,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSArray <id<SNCShopCandidate>> *candidates;
 @end
 
+@protocol SNCPlaceSearch <NSObject>
+@property (readonly) NSArray <id<SNCShopDetails>> *results;
+@end
+
 @protocol SNCAddressAutocompletion <NSObject>
 @property (readonly) NSArray <id<SNCAddressPrediction>> *predictions;
 @end
@@ -57,6 +65,8 @@ typedef void(^SNCAddressDetailsResultHandler)(id<SNCAddressDetails> _Nullable ad
 typedef void(^SNCAddressAutocompletionResultHandler)(id<SNCAddressAutocompletion> _Nullable autocompleteAddress, NSError * _Nullable error);
 typedef void(^SNCShopSearchResultHandler)(id<SNCShopSearch> _Nullable shopSearch, NSError * _Nullable error);
 typedef void(^SNCShopDetailsResultHandler)(id<SNCShopDetails> _Nullable shopDetails, NSError * _Nullable error);
+typedef void(^SNCPlaceSearchResultHandler)(id<SNCPlaceSearch> _Nullable, NSError * _Nullable error);
+typedef void(^SNCImageLoadCompletionHandler)(UIImage * _Nullable, NSError * _Nullable);
 
 @protocol SNCAddressAutocompletionPlugin <NSObject>
 
@@ -74,6 +84,14 @@ typedef void(^SNCShopDetailsResultHandler)(id<SNCShopDetails> _Nullable shopDeta
 - (void)shopDetailsForShopId:(NSString *)shopId
            completionHandler:(SNCShopDetailsResultHandler)compleionHandler;
 
+- (void)placesForSearchTerm:(NSString *)searchTerm
+                  latitude:(double)lat
+                    longitude:(double)lon
+          completionHandler:(SNCPlaceSearchResultHandler)completionHandler;
+
+- (void)photoFromReference:(NSString *)photoReference
+                  maxWidth:(double)maxWidth
+         completionHandler:(SNCImageLoadCompletionHandler)completionHandler;
 @end
 
 NS_ASSUME_NONNULL_END

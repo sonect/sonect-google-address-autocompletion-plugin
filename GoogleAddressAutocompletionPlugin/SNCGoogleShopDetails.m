@@ -16,15 +16,21 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary shopImage:(nullable UIImage *)shopImage {
     self = [super init];
     if (self) {
-        NSDictionary *resultDictionary = [dictionary[@"result"] copy];
         _address = [[SNCGooglePlaceDetails alloc] initWithDictionary:dictionary];
-        _name = [resultDictionary[@"name"] copy];
-        _openingHours = [self parseOpeningHours:[resultDictionary[@"opening_hours"] copy]];
-        _types = [resultDictionary[@"types"] copy];
+        _name = [dictionary[@"name"] copy];
+        _openingHours = [self parseOpeningHours:[dictionary[@"opening_hours"] copy]];
+        _types = [dictionary[@"types"] copy];
         _shopImage = shopImage;
+        _vicinity = dictionary[@"vicinity"];
+        _placeId = dictionary[@"place_id"];
+        _photoReference = [[dictionary[@"photos"] firstObject][@"photo_reference"] copy];
     }
     
     return self;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@ -- %@, %@, lat: %f, lon: %f", super.description, _name, _vicinity, _address.latitude, _address.longitude];
 }
 
 - (SNCOpeningHours *)parseOpeningHours:(NSDictionary *)openingHoursDictionary {
