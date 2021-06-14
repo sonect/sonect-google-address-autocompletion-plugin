@@ -34,18 +34,18 @@ class ViewController: UIViewController {
         
         let searchTerm = searchTextField?.text ?? "pizza"
         
-//        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
-//            print(String(describing: addressAutocompletion))
-//        }
-//        
-//        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
-//            print(String(describing: shopSearch))
-//        }
-//        
-//        plugin.shopDetails(forShopId: "ChIJP3A3D_OEqkARikTSnZhYMhw") { (details, error) in
-//            print(String(describing: details))
-//            self.imageView.image = details?.shopImage
-//        }
+        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
+            print(String(describing: addressAutocompletion))
+        }
+        
+        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
+            print(String(describing: shopSearch))
+        }
+        
+        plugin.shopDetails(forShopId: "ChIJP3A3D_OEqkARikTSnZhYMhw") { (details, error) in
+            print(String(describing: details))
+            self.imageView.image = details?.shopImage
+        }
         
         for subview in horizontalStackView.arrangedSubviews {
             horizontalStackView.removeArrangedSubview(subview)
