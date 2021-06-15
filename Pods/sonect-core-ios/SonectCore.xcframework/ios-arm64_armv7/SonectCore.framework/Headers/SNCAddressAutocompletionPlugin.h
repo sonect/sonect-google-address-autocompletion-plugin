@@ -58,36 +58,21 @@ SNC_SWIFT_NAME(ShopSearch)
 @property (readonly) NSArray <id<SNCShopCandidate>> *candidates;
 @end
 
-<<<<<<< HEAD:Pods/sonect-core-ios/SonectCore.framework/Headers/SNCAddressAutocompletionPlugin.h
-@protocol SNCPlaceSearch <NSObject>
-@property (readonly) NSArray <id<SNCShopDetails>> *results;
-@end
-
-=======
 SNC_SWIFT_NAME(NearbySearch)
 @protocol SNCNearbySearch <NSObject>
 @property (readonly) NSArray <id<SNCShopDetails>> *results;
 @end
 
 SNC_SWIFT_NAME(AddressAutocompletion)
->>>>>>> master:Pods/sonect-core-ios/SonectCore.xcframework/ios-arm64_armv7/SonectCore.framework/Headers/SNCAddressAutocompletionPlugin.h
 @protocol SNCAddressAutocompletion <NSObject>
 @property (readonly) NSArray <id<SNCAddressPrediction>> *predictions;
 @end
 
-<<<<<<< HEAD:Pods/sonect-core-ios/SonectCore.framework/Headers/SNCAddressAutocompletionPlugin.h
-typedef void(^SNCAddressDetailsResultHandler)(id<SNCAddressDetails> _Nullable addressDetails, NSError * _Nullable error);
-typedef void(^SNCAddressAutocompletionResultHandler)(id<SNCAddressAutocompletion> _Nullable autocompleteAddress, NSError * _Nullable error);
-typedef void(^SNCShopSearchResultHandler)(id<SNCShopSearch> _Nullable shopSearch, NSError * _Nullable error);
-typedef void(^SNCShopDetailsResultHandler)(id<SNCShopDetails> _Nullable shopDetails, NSError * _Nullable error);
-typedef void(^SNCPlaceSearchResultHandler)(id<SNCPlaceSearch> _Nullable, NSError * _Nullable error);
-=======
 typedef void(^SNCAddressDetailsResultHandler)(id<SNCAddressDetails> _Nullable addressDetails, NSError * _Nullable error) SNC_SWIFT_NAME(AddressDetailsResultHandler);
 typedef void(^SNCAddressAutocompletionResultHandler)(id<SNCAddressAutocompletion> _Nullable autocompleteAddress, NSError * _Nullable error) SNC_SWIFT_NAME(AddressAutocompletionResultHandler);
 typedef void(^SNCShopSearchResultHandler)(id<SNCShopSearch> _Nullable shopSearch, NSError * _Nullable error) SNC_SWIFT_NAME(ShopSearchResultHandler);
 typedef void(^SNCShopDetailsResultHandler)(id<SNCShopDetails> _Nullable shopDetails, NSError * _Nullable error) SNC_SWIFT_NAME(ShopDetailsResultHandler);
 typedef void(^SNCNearbySearchResultHandler)(id<SNCNearbySearch> _Nullable, NSError * _Nullable error);
->>>>>>> master:Pods/sonect-core-ios/SonectCore.xcframework/ios-arm64_armv7/SonectCore.framework/Headers/SNCAddressAutocompletionPlugin.h
 typedef void(^SNCImageLoadCompletionHandler)(UIImage * _Nullable, NSError * _Nullable);
 
 SNC_SWIFT_NAME(AddressDetails)
@@ -108,15 +93,9 @@ SNC_SWIFT_NAME(AddressDetails)
            completionHandler:(SNCShopDetailsResultHandler)compleionHandler;
 
 - (void)placesForSearchTerm:(NSString *)searchTerm
-<<<<<<< HEAD:Pods/sonect-core-ios/SonectCore.framework/Headers/SNCAddressAutocompletionPlugin.h
-                  latitude:(double)lat
-                    longitude:(double)lon
-          completionHandler:(SNCPlaceSearchResultHandler)completionHandler;
-=======
                    latitude:(double)lat
                   longitude:(double)lon
           completionHandler:(SNCNearbySearchResultHandler)completionHandler;
->>>>>>> master:Pods/sonect-core-ios/SonectCore.xcframework/ios-arm64_armv7/SonectCore.framework/Headers/SNCAddressAutocompletionPlugin.h
 
 - (void)photoFromReference:(NSString *)photoReference
                   maxWidth:(double)maxWidth
