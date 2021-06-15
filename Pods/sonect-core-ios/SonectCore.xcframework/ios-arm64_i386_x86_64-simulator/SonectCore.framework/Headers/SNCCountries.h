@@ -11,6 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Returns an alphabetically ordered array of supported country codes.
-extern NSArray <NSString *>* SNCSupportedCountryCodes(void);
+extern NSArray <NSString *>* SNCSupportedCountryCodesInCountry(NSString *countryCode);
 
 NS_ASSUME_NONNULL_END

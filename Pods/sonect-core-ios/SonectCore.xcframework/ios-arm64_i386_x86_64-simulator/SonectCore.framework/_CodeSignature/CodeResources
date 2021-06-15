@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SNCAddressAutocompletionPlugin.h</key>
 		<data>
-		UNjdkamw1uWLEbhulUIvOoeKEDM=
+		OHZCCL1lUnP0dktJsATCr2aAlFw=
 		</data>
 		<key>Headers/SNCCLIColor.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SNCCountries.h</key>
 		<data>
-		tXAJwTVoipasERTLoxyLJ59ZU8g=
+		4cVhKIr+nEK9p/w2Vrq2aBugc0Q=
 		</data>
 		<key>Headers/SNCDDASLLogCapture.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/SNCOpeningHours.h</key>
 		<data>
-		wxt22dxJrLKw9Swa2yU5aT1w5lg=
+		cl8B+6yC90H/ob+rLAnaqekAr/E=
 		</data>
 		<key>Headers/SNCScanCodePlugin.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JsYY9r0e4hMiRZdjXzpSK+AEHeI=
+		T4gUiBPn/HhJXgBWfFA4RAOvuqA=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -215,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UNjdkamw1uWLEbhulUIvOoeKEDM=
+			OHZCCL1lUnP0dktJsATCr2aAlFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			EQ5hNHnRSqAqh/vsmD4/rfFHm/2M+GBBtsmiKxk5IpU=
+			s37xzIA70zbKQnxVirD3RvGv7AfPvedRgbutt8vK0q4=
 			</data>
 		</dict>
 		<key>Headers/SNCCLIColor.h</key>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tXAJwTVoipasERTLoxyLJ59ZU8g=
+			4cVhKIr+nEK9p/w2Vrq2aBugc0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			H1ZJFSognAfQaIqsMARklpFbXTYZw14oTpnimKofJUU=
+			I6qCNl9yooVKC+Abn37AyZvUfyBEeyWRougyGWpuSms=
 			</data>
 		</dict>
 		<key>Headers/SNCDDASLLogCapture.h</key>
@@ -468,11 +468,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wxt22dxJrLKw9Swa2yU5aT1w5lg=
+			cl8B+6yC90H/ob+rLAnaqekAr/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			qvtGvC7mHikN3GxTMNnaWwTaOfXtQsjB6zHAf3r/WiI=
+			rLLum87KX4nPBhj6j0h0YUe4seWRuFfC4iGkJvxUtZ8=
 			</data>
 		</dict>
 		<key>Headers/SNCScanCodePlugin.h</key>

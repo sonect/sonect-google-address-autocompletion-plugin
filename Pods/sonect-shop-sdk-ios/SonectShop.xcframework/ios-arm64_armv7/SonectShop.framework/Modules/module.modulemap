@@ -1,6 +1,0 @@
-framework module SonectShop {
-  umbrella header "SonectShop.h"
-
-  export *
-  module * { export * }
-}
