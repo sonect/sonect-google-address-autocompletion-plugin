@@ -297,7 +297,9 @@ static CGFloat defaultImageMaxWidth = 1024;
                                                                        options:0
                                                                          error:&parsingError];
             if (parsingError) {
-                completionHandler(nil, parsingError);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completionHandler(nil, parsingError);
+                });
                 return;
             }
             
