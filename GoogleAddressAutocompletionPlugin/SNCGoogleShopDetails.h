@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, readonly) SNCOpeningHours *openingHours;
 @property (copy, readonly) UIImage *shopImage;
 @property (nonatomic, copy, readonly) NSArray <NSString*> *types;
+@property (nonatomic, copy, nullable) NSString *vicinity;
+@property (nonatomic, copy, nullable) NSString *placeId;
+@property (nonatomic, copy, nullable) NSString *photoReference;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary shopImage:(nullable UIImage *)shopImage;
 

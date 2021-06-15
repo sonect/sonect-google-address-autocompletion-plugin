@@ -14,11 +14,9 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        NSDictionary *resultDictionary = [dictionary[@"result"] copy];
-        
-        _longitude = [resultDictionary[@"geometry"][@"location"][@"lng"] floatValue];
-        _latitude = [resultDictionary[@"geometry"][@"location"][@"lat"] floatValue];
-        [self parseAddressComponents:resultDictionary[@"address_components"]];
+        _longitude = [dictionary[@"geometry"][@"location"][@"lng"] floatValue];
+        _latitude = [dictionary[@"geometry"][@"location"][@"lat"] floatValue];
+        [self parseAddressComponents:dictionary[@"address_components"]];
     }
     
     return self;

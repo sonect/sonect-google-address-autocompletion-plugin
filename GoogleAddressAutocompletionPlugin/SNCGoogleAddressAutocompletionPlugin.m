@@ -64,4 +64,17 @@
     }];
 }
 
+- (void)placesForSearchTerm:(NSString *)searchTerm
+                   latitude:(double)lat
+                  longitude:(double)lon
+          completionHandler:(SNCGooglePlaceSearchResultHandler)completionHandler {
+    [SNCGoogleMapsAPI getGooglePlacesForSearchTerm:searchTerm googleApiKey:self.apiKey latitude:lat longitude:lon completionHandler:completionHandler];
+}
+
+- (void)photoFromReference:(NSString *)photoReference
+                  maxWidth:(double)maxWidth
+         completionHandler:(SNCImageLoadCompletionHandler)completionHandler {
+    [SNCGoogleMapsAPI getPhotoFromReference:photoReference maxWidth:maxWidth googleApiKey:self.apiKey completionHandler:completionHandler];
+}
+
 @end

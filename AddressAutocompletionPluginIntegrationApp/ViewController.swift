@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var runPluginButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var horizontalStackView: UIStackView!
+    
+    let countryCode = "CH"
+    let lat = 47.3624523, lon = 8.5481677
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +31,9 @@ class ViewController: UIViewController {
     @IBAction func runPluginTapped(_ sender: Any) {
         let plugin = SNCGoogleAddressAutocompletionPlugin(apiKey: apiKeyTextField.text!)
         
-        plugin.addressAutocompletion(forSearchTerm: "Dobri Voynikov", countryCode: "BG") { (addressAutocompletion, error) in
+        let searchTerm = searchTextField?.text ?? "pizza"
+        
+        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
             print(String(describing: addressAutocompletion))
         }
         
@@ -35,13 +41,36 @@ class ViewController: UIViewController {
             print(String(describing: details))
         }
         
-        plugin.shops(forSearchTerm: "дар", countryCode: "BG") { (shopSearch, error) in
+        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
             print(String(describing: shopSearch))
         }
         
         plugin.shopDetails(forShopId: "ChIJP3A3D_OEqkARikTSnZhYMhw") { (details, error) in
             print(String(describing: details))
             self.imageView.image = details?.shopImage
+        }
+        
+        for subview in horizontalStackView.arrangedSubviews {
+            horizontalStackView.removeArrangedSubview(subview)
+            subview.removeFromSuperview()
+        }
+        
+        plugin.places(forSearchTerm: searchTerm, latitude: lat, longitude: lon) { (placeSearch, error) in
+            print(String(describing: placeSearch))
+            guard let results = placeSearch?.results else { return }
+            
+            for detail in results {
+                guard let ref = detail.photoReference else { continue }
+                plugin.photo(fromReference: ref, maxWidth: 128) { (image, error) in
+                    guard let image = image else { return }
+                    
+                    DispatchQueue.main.async {
+                        let view = UIImageView(image: image)
+                        view.widthAnchor.constraint(equalToConstant: image.size.width).isActive = true
+                        self.horizontalStackView.addArrangedSubview(view)
+                    }
+                }
+            }
         }
     }
     
@@ -52,7 +81,7 @@ class ViewController: UIViewController {
         
         let plugin = SNCGoogleAddressAutocompletionPlugin(apiKey: apiKeyTextField.text!)
         
-        plugin.shops(forSearchTerm: searchTerm, countryCode: "CH") { (shopSearch, error) in
+        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
             print(String(describing: shopSearch))
         }
     }
