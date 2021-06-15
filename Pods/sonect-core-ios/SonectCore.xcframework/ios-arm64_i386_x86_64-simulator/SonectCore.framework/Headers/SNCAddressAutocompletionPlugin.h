@@ -41,7 +41,8 @@ SNC_SWIFT_NAME(ShopDetails)
 @property (copy, readonly) NSArray <NSString*> *types;
 @property (copy, nullable, readonly) UIImage *shopImage;
 @property (nonatomic, nullable, copy) NSString *vicinity;
-@property (nonatomic, copy) NSString *placeId;
+@property (nonatomic, nullable, copy) NSString *placeId;
+@property (nonatomic, nullable, copy) NSString *photoReference;
 @end
 
 SNC_SWIFT_NAME(ShopCandidate)
