@@ -37,11 +37,12 @@
              continue;
          }
         
-        if ([types containsObject:@"locality"]) {
+        if ([types containsObject:@"locality"] ||
+            [types containsObject:@"postal_town"]) {
             _city = longName;
             continue;
         }
-
+        
         if ([types containsObject:@"country"]) {
             _country = longName;
             _countryCode = shortName;
