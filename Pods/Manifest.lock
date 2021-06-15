@@ -1,5 +1,5 @@
 PODS:
-  - sonect-core-ios (1.4.0)
+  - sonect-core-ios (1.4.1)
 
 DEPENDENCIES:
   - sonect-core-ios
@@ -9,7 +9,7 @@ SPEC REPOS:
     - sonect-core-ios
 
 SPEC CHECKSUMS:
-  sonect-core-ios: 4cfe19947b1afeecb492a0ba5de5a947f0f3dc83
+  sonect-core-ios: e95c845ccceb4a3576e636160e7e12090e5bc44c
 
 PODFILE CHECKSUM: 97acd131b9c956af821c73ff06147a5f4d079f51
 
