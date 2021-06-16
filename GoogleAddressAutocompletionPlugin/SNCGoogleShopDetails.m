@@ -16,7 +16,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary shopImage:(nullable UIImage *)shopImage {
     self = [super init];
     if (self) {
-        _address = [[SNCGooglePlaceDetails alloc] initWithDictionary:dictionary];
+        _address = [[SNCGooglePlaceDetails alloc] initWithDictionary:@{@"result" : dictionary}]; // it expects such structure
         _name = [dictionary[@"name"] copy];
         _openingHours = [self parseOpeningHours:[dictionary[@"opening_hours"] copy]];
         _types = [dictionary[@"types"] copy];
