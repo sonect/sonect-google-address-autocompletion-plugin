@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SNCCountries.h</key>
 		<data>
-		4cVhKIr+nEK9p/w2Vrq2aBugc0Q=
+		VmKx6AweYb0ljTEK1431bUEPzzw=
 		</data>
 		<key>Headers/SNCDDASLLogCapture.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/SNCOpeningHours.h</key>
 		<data>
-		cl8B+6yC90H/ob+rLAnaqekAr/E=
+		GmQWIT70tp3Uo9zxxXPVWDbRkYI=
 		</data>
 		<key>Headers/SNCScanCodePlugin.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m3KMO8PxDcZ2dAeC1YylOFrP3fU=
+		Di4LyOpm8EeSswwGC2bN0qvzCJU=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6+LREv87dc6tMZPyEA7Rfk8EGO8=
+		Py8aFqPnG0XwswMswVfxeVzopZk=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		6+LREv87dc6tMZPyEA7Rfk8EGO8=
+		Py8aFqPnG0XwswMswVfxeVzopZk=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bkUqaDl+LprF/YFjq4Xn5BV4BBU=
+		YYHTvce4k3ZE2Kb1zmVHGSK++/k=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/i386.swiftmodule</key>
 		<data>
-		bkUqaDl+LprF/YFjq4Xn5BV4BBU=
+		YYHTvce4k3ZE2Kb1zmVHGSK++/k=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		frk5+R8kgnEBcUGxJkYaxKtse08=
+		ylfvOal8qSt+VqENt5NZCXt07UE=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		frk5+R8kgnEBcUGxJkYaxKtse08=
+		ylfvOal8qSt+VqENt5NZCXt07UE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4cVhKIr+nEK9p/w2Vrq2aBugc0Q=
+			VmKx6AweYb0ljTEK1431bUEPzzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			I6qCNl9yooVKC+Abn37AyZvUfyBEeyWRougyGWpuSms=
+			anuGTCkhGqv8MLE+8hhVqAXdITj71K3kIFKRkXscak8=
 			</data>
 		</dict>
 		<key>Headers/SNCDDASLLogCapture.h</key>
@@ -468,11 +468,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cl8B+6yC90H/ob+rLAnaqekAr/E=
+			GmQWIT70tp3Uo9zxxXPVWDbRkYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rLLum87KX4nPBhj6j0h0YUe4seWRuFfC4iGkJvxUtZ8=
+			h98/hicmXBZVnsEzDiBqfekRJJasT5UTptDkWYQ6jHg=
 			</data>
 		</dict>
 		<key>Headers/SNCScanCodePlugin.h</key>
@@ -578,11 +578,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6+LREv87dc6tMZPyEA7Rfk8EGO8=
+			Py8aFqPnG0XwswMswVfxeVzopZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			c2OEg9mUQZS++zT7o8YGagA5px6GMLjnXFVkJNapAPA=
+			v6JS/MxmrJNBI8vVxVHIHqNj50Uii9M7hudXlQ5jaKA=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/arm64.swiftdoc</key>
@@ -611,11 +611,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6+LREv87dc6tMZPyEA7Rfk8EGO8=
+			Py8aFqPnG0XwswMswVfxeVzopZk=
 			</data>
 			<key>hash2</key>
 			<data>
-			c2OEg9mUQZS++zT7o8YGagA5px6GMLjnXFVkJNapAPA=
+			v6JS/MxmrJNBI8vVxVHIHqNj50Uii9M7hudXlQ5jaKA=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -644,11 +644,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bkUqaDl+LprF/YFjq4Xn5BV4BBU=
+			YYHTvce4k3ZE2Kb1zmVHGSK++/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			/5BOb8rkzsW3p/3Ua9QQLmA30vAUz1uQ4pch5wbbFMM=
+			iAjCjkXq6y0qhAx6lvO7hLGftA/2vXSZqOxC8zNbTnM=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/i386.swiftdoc</key>
@@ -677,11 +677,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bkUqaDl+LprF/YFjq4Xn5BV4BBU=
+			YYHTvce4k3ZE2Kb1zmVHGSK++/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			/5BOb8rkzsW3p/3Ua9QQLmA30vAUz1uQ4pch5wbbFMM=
+			iAjCjkXq6y0qhAx6lvO7hLGftA/2vXSZqOxC8zNbTnM=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -710,11 +710,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			frk5+R8kgnEBcUGxJkYaxKtse08=
+			ylfvOal8qSt+VqENt5NZCXt07UE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o9SuePvo6rrTs06GyskgeqtNRZClRjy2K4hIFuiwoa4=
+			TrRVQ/MkMqRBwbqL8VUMDj2/D9fvV2plNeQHX0Ndq0s=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/x86_64.swiftdoc</key>
@@ -743,11 +743,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			frk5+R8kgnEBcUGxJkYaxKtse08=
+			ylfvOal8qSt+VqENt5NZCXt07UE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o9SuePvo6rrTs06GyskgeqtNRZClRjy2K4hIFuiwoa4=
+			TrRVQ/MkMqRBwbqL8VUMDj2/D9fvV2plNeQHX0Ndq0s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

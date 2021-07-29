@@ -45,6 +45,9 @@ typedef NS_ENUM(NSUInteger, SNCDay) {
 @end
 
 @interface SNCOpeningHours: NSObject <NSSecureCoding>
+
++ (instancetype)openAllDayOpeningHours;
+
 @property (nonatomic, readonly) BOOL openNow;
 @property (nonatomic, copy, readonly) NSArray<NSString*> *weekdayText;
 

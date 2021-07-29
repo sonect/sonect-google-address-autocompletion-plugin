@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SNCCountries.h</key>
 		<data>
-		4cVhKIr+nEK9p/w2Vrq2aBugc0Q=
+		VmKx6AweYb0ljTEK1431bUEPzzw=
 		</data>
 		<key>Headers/SNCDDASLLogCapture.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/SNCOpeningHours.h</key>
 		<data>
-		cl8B+6yC90H/ob+rLAnaqekAr/E=
+		GmQWIT70tp3Uo9zxxXPVWDbRkYI=
 		</data>
 		<key>Headers/SNCScanCodePlugin.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Pf+S/6vpiH8NGaPbUw34pKwy3Bk=
+		dGSd6Ruu7/EJKRK+LH0U3J4f08A=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm.swiftmodule</key>
 		<data>
-		5QbKuG5CXQcpMpMa/DNEzcUi7Ek=
+		RKEQuvrcgG8pU7O/6jnV6CGl+q8=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		P5b/fWifHbUC1/kQOevmuDOUXt4=
+		TcJb51UR1tTurTTrRwJTAtDd1Hc=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		P5b/fWifHbUC1/kQOevmuDOUXt4=
+		TcJb51UR1tTurTTrRwJTAtDd1Hc=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		5QbKuG5CXQcpMpMa/DNEzcUi7Ek=
+		RKEQuvrcgG8pU7O/6jnV6CGl+q8=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Modules/SonectCore.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		5QbKuG5CXQcpMpMa/DNEzcUi7Ek=
+		RKEQuvrcgG8pU7O/6jnV6CGl+q8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -236,11 +236,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4cVhKIr+nEK9p/w2Vrq2aBugc0Q=
+			VmKx6AweYb0ljTEK1431bUEPzzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			I6qCNl9yooVKC+Abn37AyZvUfyBEeyWRougyGWpuSms=
+			anuGTCkhGqv8MLE+8hhVqAXdITj71K3kIFKRkXscak8=
 			</data>
 		</dict>
 		<key>Headers/SNCDDASLLogCapture.h</key>
@@ -456,11 +456,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cl8B+6yC90H/ob+rLAnaqekAr/E=
+			GmQWIT70tp3Uo9zxxXPVWDbRkYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rLLum87KX4nPBhj6j0h0YUe4seWRuFfC4iGkJvxUtZ8=
+			h98/hicmXBZVnsEzDiBqfekRJJasT5UTptDkWYQ6jHg=
 			</data>
 		</dict>
 		<key>Headers/SNCScanCodePlugin.h</key>
@@ -566,11 +566,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5QbKuG5CXQcpMpMa/DNEzcUi7Ek=
+			RKEQuvrcgG8pU7O/6jnV6CGl+q8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Fd/IJpVuAfXAJ9OLvx3sTzYSqQjkmKZ7L6ojGUlbrI=
+			63SqUxMo0PzA+SErMl2MefDG311TvjKhAMHyc08NZvc=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -599,11 +599,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P5b/fWifHbUC1/kQOevmuDOUXt4=
+			TcJb51UR1tTurTTrRwJTAtDd1Hc=
 			</data>
 			<key>hash2</key>
 			<data>
-			p0Yx5DvGcDfWGE2/Cxtv8qD2xwMufxFwXUe4tns7/b8=
+			7cvidVeDlRKJVL15nChuolAatoYmZhB0H+mA1bo00ZM=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/arm64.swiftdoc</key>
@@ -632,11 +632,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P5b/fWifHbUC1/kQOevmuDOUXt4=
+			TcJb51UR1tTurTTrRwJTAtDd1Hc=
 			</data>
 			<key>hash2</key>
 			<data>
-			p0Yx5DvGcDfWGE2/Cxtv8qD2xwMufxFwXUe4tns7/b8=
+			7cvidVeDlRKJVL15nChuolAatoYmZhB0H+mA1bo00ZM=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -665,11 +665,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5QbKuG5CXQcpMpMa/DNEzcUi7Ek=
+			RKEQuvrcgG8pU7O/6jnV6CGl+q8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Fd/IJpVuAfXAJ9OLvx3sTzYSqQjkmKZ7L6ojGUlbrI=
+			63SqUxMo0PzA+SErMl2MefDG311TvjKhAMHyc08NZvc=
 			</data>
 		</dict>
 		<key>Modules/SonectCore.swiftmodule/armv7.swiftdoc</key>
@@ -698,11 +698,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5QbKuG5CXQcpMpMa/DNEzcUi7Ek=
+			RKEQuvrcgG8pU7O/6jnV6CGl+q8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Fd/IJpVuAfXAJ9OLvx3sTzYSqQjkmKZ7L6ojGUlbrI=
+			63SqUxMo0PzA+SErMl2MefDG311TvjKhAMHyc08NZvc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
