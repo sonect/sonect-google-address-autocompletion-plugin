@@ -14,6 +14,9 @@
 #import "SNCGoogleShopDetails.h"
 #import "SNCGoogleNearbySearch.h"
 #import <CoreLocation/CoreLocation.h>
+#import "NSURLRequest+SNCCurlDescription.h"
+#import "NSJSONSerialization+SNCSDKRemovingNulls.h"
+#import "SNCLogging.h"
 
 static NSString *addressAutocomplete = @"https://maps.googleapis.com/maps/api/place/autocomplete/json";
 static NSString *placeDetails = @"https://maps.googleapis.com/maps/api/place/details/json";
@@ -24,6 +27,10 @@ static NSString *nearbySearch = @"https://maps.googleapis.com/maps/api/place/nea
 static CGFloat defaultImageMaxWidth = 1024;
 
 @implementation SNCGoogleMapsAPI
+
++ (void)initialize {
+    [SNCLogging setupLoggers];
+}
 
 + (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
@@ -42,8 +49,15 @@ static CGFloat defaultImageMaxWidth = 1024;
     request.HTTPMethod = @"GET";
     [request setValue:@"Application/json" forHTTPHeaderField:@"Content-Type"];
     
+    [self debugLogRequest:request];
+ 
     NSURLSession *session = NSURLSession.sharedSession;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        [self debugLogResponse:(NSHTTPURLResponse *)response
+                          data:data
+                         error:error];
+        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(nil, error);
@@ -86,8 +100,14 @@ static CGFloat defaultImageMaxWidth = 1024;
     request.HTTPMethod = @"GET";
     [request setValue:@"Application/json" forHTTPHeaderField:@"Content-Type"];
     
+    [self debugLogRequest:request];
+    
     NSURLSession *session = NSURLSession.sharedSession;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        [self debugLogResponse:(NSHTTPURLResponse *)response
+                          data:data
+                         error:error];
+        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(nil, error);
@@ -133,8 +153,14 @@ static CGFloat defaultImageMaxWidth = 1024;
     request.HTTPMethod = @"GET";
     [request setValue:@"Application/json" forHTTPHeaderField:@"Content-Type"];
     
+    [self debugLogRequest:request];
+    
     NSURLSession *session = NSURLSession.sharedSession;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        [self debugLogResponse:(NSHTTPURLResponse *)response
+                          data:data
+                         error:error];
+        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(nil, error);
@@ -177,8 +203,14 @@ static CGFloat defaultImageMaxWidth = 1024;
     request.HTTPMethod = @"GET";
     [request setValue:@"Application/json" forHTTPHeaderField:@"Content-Type"];
     
+    [self debugLogRequest:request];
+    
     NSURLSession *session = NSURLSession.sharedSession;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        [self debugLogResponse:(NSHTTPURLResponse *)response
+                          data:data
+                         error:error];
+        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(nil, error);
@@ -239,8 +271,15 @@ static CGFloat defaultImageMaxWidth = 1024;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:serviceUrl.URL];
     request.HTTPMethod = @"GET";
     
+    [self debugLogRequest:request];
+    
     NSURLSession *session = NSURLSession.sharedSession;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        [self debugLogResponse:(NSHTTPURLResponse *)response
+                          data:data
+                         error:error];
+        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(nil, error);
@@ -282,8 +321,16 @@ static CGFloat defaultImageMaxWidth = 1024;
     request.HTTPMethod = @"GET";
     [request setValue:@"Application/json" forHTTPHeaderField:@"Content-Type"];
     
+    [self debugLogRequest:request];
+    
+    
     NSURLSession *session = NSURLSession.sharedSession;
     [[session dataTaskWithRequest:request.copy completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        [self debugLogResponse:(NSHTTPURLResponse *)response
+                          data:data
+                         error:error];
+        
         if (error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(nil, error);
@@ -312,6 +359,46 @@ static CGFloat defaultImageMaxWidth = 1024;
             return;
         }
     }] resume];
+}
+
+#pragma mark - Debug Log
+
++(void)debugLogRequest:(NSURLRequest *)request {
+    NSString *size = [[NSByteCountFormatter new] stringFromByteCount:(long long)request.HTTPBody.length];
+    SNCDDLogDebug(@"\n\n+ REQUEST: %@\n- SIZE: %@\n\n=======================================\n%@\n=======================================\n\n", request.URL.absoluteString, size, request.snc_curl);
+}
+
++ (void)debugLogResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError *)error {
+    NSMutableString *logString = [NSMutableString stringWithFormat:@"\n\n+ RESPONSE: %@ (%ld)\n\n=======================================\n", response.URL.absoluteString, (long)response.statusCode];
+    
+    if (error) {
+        [logString appendFormat:@"ERROR: \n%@", error.debugDescription];
+    }
+    else {
+        NSError *jsonError = nil;
+        id object = [NSJSONSerialization sncsdk_JSONObjectWithData:data
+                                                           options:0
+                                                             error:&jsonError
+                                                     removingNulls:YES
+                                                      ignoreArrays:NO];
+
+        if (!object || jsonError) {
+            [logString appendFormat:@"ERROR: \n%@", jsonError.debugDescription];
+            NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            [logString appendFormat:@"\n%@\n", dataString];
+        }
+        else {
+            id prettyPrintedData = [NSJSONSerialization dataWithJSONObject:object
+                                                                   options:NSJSONWritingPrettyPrinted
+                                                                     error:nil];
+            NSString *jsonString = [[NSString alloc] initWithData:prettyPrintedData encoding:NSUTF8StringEncoding];
+            [logString appendFormat:@"%@", jsonString];
+        }
+    }
+    
+    [logString appendString:@"\n=======================================\n"];
+    
+    SNCDDLogDebug(@"%@\n\n", logString);
 }
 
 @end
