@@ -37,6 +37,16 @@
     if (!openingHoursDictionary) {
         return nil;
     }
+    
+    // 24/7 open shop case's opening hours differ from our format so we detect this case and return static opening hour instance 
+    if ([openingHoursDictionary[@"periods"] count] == 1) {
+           NSDictionary *periodDictionary = [openingHoursDictionary[@"periods"] firstObject];
+           if ([periodDictionary[@"open"][@"day"] unsignedIntValue] == 0 &&
+               [periodDictionary[@"open"][@"time"] isEqualToString:@"0000"]) {
+               return SNCOpeningHours.openAllDayOpeningHours;
+           }
+       }
+    
     NSMutableArray *periods = [NSMutableArray new];
     
     for (NSDictionary *periodDictionary in openingHoursDictionary[@"periods"]) {

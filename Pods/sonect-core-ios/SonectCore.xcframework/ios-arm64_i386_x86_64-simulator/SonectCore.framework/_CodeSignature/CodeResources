@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NSJSONSerialization+SNCSDKRemovingNulls.h</key>
+		<data>
+		DCXpKwXcC2VeizTBgG99eF1flbg=
+		</data>
+		<key>Headers/NSURLRequest+SNCCurlDescription.h</key>
+		<data>
+		FNDNZL5frFyHrncac5fmrA5c64I=
+		</data>
 		<key>Headers/SNCAddressAutocompletionPlugin.h</key>
 		<data>
 		7HSX2goe3k7B2dl8F9g9DeKSvjo=
@@ -92,6 +100,10 @@
 		<data>
 		wTNsgPKAlOKzSmHTDoaYw4UF0mU=
 		</data>
+		<key>Headers/SNCLoggingManager.h</key>
+		<data>
+		uceqyfylQPuq4nl676D+429X2S4=
+		</data>
 		<key>Headers/SNCLoggingSwift.h</key>
 		<data>
 		8eQK99kEguU9Xzs8sWw2Ghbbzxc=
@@ -118,7 +130,7 @@
 		</data>
 		<key>Headers/SonectCore.h</key>
 		<data>
-		Q3NSL7OGjJnA+s9Hz2YjsbKz96U=
+		zwYRZTVeBC5QiXoFLp9Z7yom96U=
 		</data>
 		<key>Headers/SonectDefines.h</key>
 		<data>
@@ -130,7 +142,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Di4LyOpm8EeSswwGC2bN0qvzCJU=
+		zBd9UU5RXCFKmODjk3OIRP72jB8=
 		</data>
 		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -211,6 +223,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/NSJSONSerialization+SNCSDKRemovingNulls.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DCXpKwXcC2VeizTBgG99eF1flbg=
+			</data>
+			<key>hash2</key>
+			<data>
+			c29m9uAghOC9lIrWpaAOkbcR5Fu2B+NOnxerp6p4Mzk=
+			</data>
+		</dict>
+		<key>Headers/NSURLRequest+SNCCurlDescription.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FNDNZL5frFyHrncac5fmrA5c64I=
+			</data>
+			<key>hash2</key>
+			<data>
+			upq+5F2iOP2oJOnqx2zPBxK6CCAUZGKGhg7VjvLmbRM=
+			</data>
+		</dict>
 		<key>Headers/SNCAddressAutocompletionPlugin.h</key>
 		<dict>
 			<key>hash</key>
@@ -453,6 +487,17 @@
 			oAeK6T7z0vzN8kbsg6gkEBIzFS6j/EGruISYQIgj9qo=
 			</data>
 		</dict>
+		<key>Headers/SNCLoggingManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uceqyfylQPuq4nl676D+429X2S4=
+			</data>
+			<key>hash2</key>
+			<data>
+			a8v3X4TgzaOH5GwVYa2Bie6UbvgM1wVq9PlOUj2Rbic=
+			</data>
+		</dict>
 		<key>Headers/SNCLoggingSwift.h</key>
 		<dict>
 			<key>hash</key>
@@ -523,11 +568,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3NSL7OGjJnA+s9Hz2YjsbKz96U=
+			zwYRZTVeBC5QiXoFLp9Z7yom96U=
 			</data>
 			<key>hash2</key>
 			<data>
-			SBSjcJX0DiHWHzy7zYpiPbH3xJ/dfYF64fUW9sTRrdM=
+			Wf1gpbEiBjNoFVv/pMypyLOygYaf9XZC+9qPRVWny/w=
 			</data>
 		</dict>
 		<key>Headers/SonectDefines.h</key>

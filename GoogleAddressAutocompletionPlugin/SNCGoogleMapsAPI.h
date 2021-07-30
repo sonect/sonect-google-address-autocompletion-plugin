@@ -21,31 +21,33 @@ typedef void(^SNCGooglePlaceSearchResultHandler)(SNCGoogleNearbySearch * _Nullab
 
 @interface SNCGoogleMapsAPI : NSObject
 
-+ (void)getAddressesForSearchTerm:(NSString *)searchTerm
+@property (nonatomic, getter = isDebuggingEnabled) BOOL debuggingEnabled;
+
+- (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
                      googleApiKey:(NSString *)key
                 completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)compleionHandler;
 
-+ (void)getPlaceDetailsForPlaceId:(NSString *)placeId
+- (void)getPlaceDetailsForPlaceId:(NSString *)placeId
                      googleApiKey:(NSString *)key
                 completionHandler:(SNCGooglePlaceDetailsCompletionHandler)compleionHandler;
 
-+ (void)getShopsForSearchTerm:(NSString *)searchTerm
+- (void)getShopsForSearchTerm:(NSString *)searchTerm
                   countryCode:(NSString *)countryCode
                  googleApiKey:(NSString *)key
             completionHandler:(SNCGoogleShopSearchCompletionHandler)compleionHandler;
 
-+ (void)getShopDetailsForShopId:(NSString *)placeId
+- (void)getShopDetailsForShopId:(NSString *)placeId
                    googleApiKey:(NSString *)key
               completionHandler:(SNCGoogleShopDetailsCompletionHandler)compleionHandler;
 
-+ (void)getGooglePlacesForSearchTerm:(NSString *)searchTerm
+- (void)getGooglePlacesForSearchTerm:(NSString *)searchTerm
                         googleApiKey:(NSString *)key
                             latitude:(double)lat
                            longitude:(double)lon
                    completionHandler:(SNCGooglePlaceSearchResultHandler)completionHandler;
 
-+ (void)getPhotoFromReference:(NSString *)photoReference
+- (void)getPhotoFromReference:(NSString *)photoReference
                      maxWidth:(double)maxWidth
                  googleApiKey:(NSString *)key
             completionHandler:(SNCGooglePlacePhotoCompletionHandler)completionHandler;

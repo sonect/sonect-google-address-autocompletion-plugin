@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction func runPluginTapped(_ sender: Any) {
         let plugin = SNCGoogleAddressAutocompletionPlugin(apiKey: apiKeyTextField.text!)
+        plugin.isDebuggingEnabled = true
         
         let searchTerm = searchTextField?.text ?? "pizza"
         
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
             print(String(describing: shopSearch))
         }
         
-        plugin.shopDetails(forShopId: "ChIJP3A3D_OEqkARikTSnZhYMhw") { (details, error) in
+        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
             print(String(describing: details))
             self.imageView.image = details?.shopImage
         }
