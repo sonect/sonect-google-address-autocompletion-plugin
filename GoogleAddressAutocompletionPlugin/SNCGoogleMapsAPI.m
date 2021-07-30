@@ -14,9 +14,7 @@
 #import "SNCGoogleShopDetails.h"
 #import "SNCGoogleNearbySearch.h"
 #import <CoreLocation/CoreLocation.h>
-#import "NSURLRequest+SNCCurlDescription.h"
-#import "NSJSONSerialization+SNCSDKRemovingNulls.h"
-#import "SNCLogging.h"
+#import <SonectCore/SonectCore.h>
 
 static NSString *addressAutocomplete = @"https://maps.googleapis.com/maps/api/place/autocomplete/json";
 static NSString *placeDetails = @"https://maps.googleapis.com/maps/api/place/details/json";
@@ -29,7 +27,7 @@ static CGFloat defaultImageMaxWidth = 1024;
 @implementation SNCGoogleMapsAPI
 
 + (void)initialize {
-    [SNCLogging setupLoggers];
+    [SNCLoggingManager setupLoggers];
 }
 
 + (void)getAddressesForSearchTerm:(NSString *)searchTerm

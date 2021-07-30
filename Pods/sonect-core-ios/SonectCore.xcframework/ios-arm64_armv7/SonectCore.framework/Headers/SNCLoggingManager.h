@@ -1,5 +1,5 @@
 //
-//  SNCLogging.h
+//  SNCLoggingManager.h
 //  Sonect
 //
 //  Created by Oleksandr Bedzyk on 16.07.2020.
@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SonectCore/SonectCore.h>
+#import "SNCLogging.h"
+#import "SNCDDLogMacros.h"
 
 extern SNCDDLogLevel const ddLogLevel;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SNCLogging : NSObject
+@interface SNCLoggingManager : NSObject
 + (void)setupLoggers;
 @end
 
