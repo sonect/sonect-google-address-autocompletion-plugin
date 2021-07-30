@@ -26,11 +26,7 @@ static CGFloat defaultImageMaxWidth = 1024;
 
 @implementation SNCGoogleMapsAPI
 
-+ (void)initialize {
-    [SNCLoggingManager setupLoggers];
-}
-
-+ (void)getAddressesForSearchTerm:(NSString *)searchTerm
+- (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
                      googleApiKey:(NSString *)key
                 completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)completionHandler {
@@ -84,7 +80,7 @@ static CGFloat defaultImageMaxWidth = 1024;
     }] resume];
 }
 
-+ (void)getPlaceDetailsForPlaceId:(NSString *)placeId
+- (void)getPlaceDetailsForPlaceId:(NSString *)placeId
                      googleApiKey:(NSString *)key
                 completionHandler:(SNCGooglePlaceDetailsCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
@@ -134,7 +130,7 @@ static CGFloat defaultImageMaxWidth = 1024;
     }] resume];
 }
 
-+ (void)getShopsForSearchTerm:(NSString *)searchTerm
+- (void)getShopsForSearchTerm:(NSString *)searchTerm
                   countryCode:(NSString *)countryCode
                  googleApiKey:(NSString *)key
             completionHandler:(SNCGoogleShopSearchCompletionHandler)completionHandler {
@@ -187,7 +183,7 @@ static CGFloat defaultImageMaxWidth = 1024;
     }] resume];
 }
 
-+ (void)getShopDetailsForShopId:(NSString *)placeId
+- (void)getShopDetailsForShopId:(NSString *)placeId
                    googleApiKey:(NSString *)key
               completionHandler:(SNCGoogleShopDetailsCompletionHandler)completionHandler {
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:placeDetails];
@@ -233,7 +229,7 @@ static CGFloat defaultImageMaxWidth = 1024;
     }] resume];
 }
 
-+ (void)loadPhotoAndMakeShopDetailsFromDictionary:(NSDictionary *)dictionary googleApiKey:(NSString *)key completion:(SNCGoogleShopDetailsCompletionHandler)completionHandler {
+- (void)loadPhotoAndMakeShopDetailsFromDictionary:(NSDictionary *)dictionary googleApiKey:(NSString *)key completion:(SNCGoogleShopDetailsCompletionHandler)completionHandler {
     NSString *photoReference = [self firstPhotoReferenceFromDetailsDictionary:dictionary];
     NSDictionary *resultDictionary = dictionary[@"result"];
     if (photoReference) {
@@ -254,7 +250,7 @@ static CGFloat defaultImageMaxWidth = 1024;
     }
 }
 
-+ (void)getPhotoFromReference:(NSString *)photoReference
+- (void)getPhotoFromReference:(NSString *)photoReference
                      maxWidth:(CGFloat)maxWidth
                    googleApiKey:(NSString *)key
             completionHandler:(SNCGooglePlacePhotoCompletionHandler)completionHandler {
@@ -297,11 +293,11 @@ static CGFloat defaultImageMaxWidth = 1024;
     }] resume];
 }
 
-+ (nullable NSString *)firstPhotoReferenceFromDetailsDictionary:(NSDictionary *)dictionary {
+- (nullable NSString *)firstPhotoReferenceFromDetailsDictionary:(NSDictionary *)dictionary {
     return [[dictionary[@"result"][@"photos"] firstObject][@"photo_reference"] copy];
 }
 
-+ (void)getGooglePlacesForSearchTerm:(NSString *)searchTerm
+- (void)getGooglePlacesForSearchTerm:(NSString *)searchTerm
                         googleApiKey:(NSString *)key
                             latitude:(double)lat
                            longitude:(double)lon
@@ -361,12 +357,20 @@ static CGFloat defaultImageMaxWidth = 1024;
 
 #pragma mark - Debug Log
 
-+(void)debugLogRequest:(NSURLRequest *)request {
+- (void)debugLogRequest:(NSURLRequest *)request {
+    if (![self isDebuggingEnabled]) {
+        return;
+    }
+    
     NSString *size = [[NSByteCountFormatter new] stringFromByteCount:(long long)request.HTTPBody.length];
     SNCDDLogDebug(@"\n\n+ REQUEST: %@\n- SIZE: %@\n\n=======================================\n%@\n=======================================\n\n", request.URL.absoluteString, size, request.snc_curl);
 }
 
-+ (void)debugLogResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError *)error {
+- (void)debugLogResponse:(NSHTTPURLResponse *)response data:(NSData *)data error:(NSError *)error {
+    if (![self isDebuggingEnabled]) {
+        return;
+    }
+    
     NSMutableString *logString = [NSMutableString stringWithFormat:@"\n\n+ RESPONSE: %@ (%ld)\n\n=======================================\n", response.URL.absoluteString, (long)response.statusCode];
     
     if (error) {

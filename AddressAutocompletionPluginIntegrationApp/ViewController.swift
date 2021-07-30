@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction func runPluginTapped(_ sender: Any) {
         let plugin = SNCGoogleAddressAutocompletionPlugin(apiKey: apiKeyTextField.text!)
+        plugin.isDebuggingEnabled = true
         
         let searchTerm = searchTextField?.text ?? "pizza"
         
