@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet var horizontalStackView: UIStackView!
     
     let countryCode = "CH"
-    let lat = 47.3624523, lon = 8.5481677
+    
+    let lat = 47.383953, lon = 8.499051
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,22 +35,22 @@ class ViewController: UIViewController {
         
         let searchTerm = searchTextField?.text ?? "pizza"
         
-        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
-            print(String(describing: addressAutocompletion))
-        }
-        
-        plugin.adressDetails(forAddressId: "EhxMaXZlcnBvb2wgU3RyZWV0LCBMb25kb24sIFVLIi4qLAoUChIJqeLSXbIcdkgRqAbi6bi_PEcSFAoSCfPzF7dbG3ZIEQqyADl5LpFJ") { (details, error) in
-            print(String(describing: details))
-        }
-        
-        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
-            print(String(describing: shopSearch))
-        }
-        
-        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
-            print(String(describing: details))
-            self.imageView.image = details?.shopImage
-        }
+//        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
+//            print(String(describing: addressAutocompletion))
+//        }
+//
+//        plugin.adressDetails(forAddressId: "EhxMaXZlcnBvb2wgU3RyZWV0LCBMb25kb24sIFVLIi4qLAoUChIJqeLSXbIcdkgRqAbi6bi_PEcSFAoSCfPzF7dbG3ZIEQqyADl5LpFJ") { (details, error) in
+//            print(String(describing: details))
+//        }
+//
+//        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
+//            print(String(describing: shopSearch))
+//        }
+//
+//        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
+//            print(String(describing: details))
+//            self.imageView.image = details?.shopImage
+//        }
         
         for subview in horizontalStackView.arrangedSubviews {
             horizontalStackView.removeArrangedSubview(subview)
@@ -58,19 +59,20 @@ class ViewController: UIViewController {
         
         plugin.places(forSearchTerm: searchTerm, latitude: lat, longitude: lon) { (placeSearch, error) in
             print(String(describing: placeSearch))
-            guard let results = placeSearch?.results else { return }
+            guard let results = placeSearch?.predictions else { return }
             
-            for detail in results {
-                guard let ref = detail.photoReference else { continue }
-                plugin.photo(fromReference: ref, maxWidth: 128) { (image, error) in
-                    guard let image = image else { return }
-                    
-                    DispatchQueue.main.async {
-                        let view = UIImageView(image: image)
-                        view.widthAnchor.constraint(equalToConstant: image.size.width).isActive = true
-                        self.horizontalStackView.addArrangedSubview(view)
-                    }
-                }
+            for address in results {
+                
+                let mainLabel = UILabel(frame: .zero)
+                mainLabel.text = address.mainText
+                let secondaryLabel = UILabel(frame: .zero)
+                secondaryLabel.text = address.secondaryText
+                let verticalStack = UIStackView(arrangedSubviews: [mainLabel, secondaryLabel])
+                verticalStack.distribution = .fillEqually
+                verticalStack.axis = .vertical
+                verticalStack.widthAnchor.constraint(equalToConstant: 120).isActive = true
+                
+                self.horizontalStackView.addArrangedSubview(verticalStack)
             }
         }
     }

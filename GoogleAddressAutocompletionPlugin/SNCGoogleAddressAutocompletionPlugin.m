@@ -40,7 +40,7 @@
 - (void)addressAutocompletionForSearchTerm:(NSString *)searchTerm
                                countryCode:(NSString *)countryCode
                          completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler {
-    [self.mapsApi getAddressesForSearchTerm:searchTerm countryCode:countryCode googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
+    [self.mapsApi getAddressesForSearchTerm:searchTerm countryCode:countryCode types:@"address" location:kCLLocationCoordinate2DInvalid googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
         completionHandler((id)addressAutocompletion, error);
     }];
 }
@@ -77,8 +77,10 @@
 - (void)placesForSearchTerm:(NSString *)searchTerm
                    latitude:(double)lat
                   longitude:(double)lon
-          completionHandler:(SNCGooglePlaceSearchResultHandler)completionHandler {
-    [self.mapsApi getGooglePlacesForSearchTerm:searchTerm googleApiKey:self.apiKey latitude:lat longitude:lon completionHandler:completionHandler];
+          completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler {
+    [self.mapsApi getAddressesForSearchTerm:searchTerm countryCode:@"" types:@"geocode" location:CLLocationCoordinate2DMake(lat, lon) googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
+        completionHandler((id)addressAutocompletion, error);
+    }];
 }
 
 - (void)photoFromReference:(NSString *)photoReference
