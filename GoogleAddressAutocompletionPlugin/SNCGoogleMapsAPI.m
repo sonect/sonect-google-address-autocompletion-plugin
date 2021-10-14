@@ -44,7 +44,7 @@ static CGFloat defaultImageMaxWidth = 1024;
         [queryItems addObject:[NSURLQueryItem queryItemWithName:@"components" value:[NSString stringWithFormat:@"country:%@", countryCode]]];
     }
     if (CLLocationCoordinate2DIsValid(location)) {
-        NSString *value = [NSString stringWithFormat:@"%lf%%2C%lf", location.latitude, location.longitude];
+        NSString *value = [NSString stringWithFormat:@"%lf,%lf", location.latitude, location.longitude];
         value = [value stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         [queryItems addObject:[NSURLQueryItem queryItemWithName:@"location" value:value]];
     }
