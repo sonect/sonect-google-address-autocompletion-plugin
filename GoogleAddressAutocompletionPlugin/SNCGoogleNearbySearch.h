@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "SNCGoogleShopDetails.h"
+#import <SonectCore/SNCAddressAutocompletionPlugin.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SNCGoogleNearbySearch : NSObject
+@interface SNCGoogleNearbySearch : NSObject <SNCNearbySearch>
 @property (readonly) NSArray <SNCGoogleShopDetails *> *results;
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 @end

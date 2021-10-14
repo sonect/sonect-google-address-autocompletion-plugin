@@ -21,10 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, getter = isDebuggingEnabled) BOOL debuggingEnabled;
 
 - (instancetype)initWithApiKey:(NSString *)apiKey;
-- (void)placesForSearchTerm:(NSString *)searchTerm
-                   latitude:(double)lat
-                  longitude:(double)lon
-          completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler;
 @end
 
 NS_ASSUME_NONNULL_END

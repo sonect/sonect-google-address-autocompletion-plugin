@@ -10,6 +10,9 @@
 #import "SNCGoogleMapsAPI.h"
 //#import <SonectCore/SNCAddressAutocompletionPlugin.h>
 #import <SonectCore/SonectCore.h>
+#import "SNCGoogleAutocompleteAddresses.h"
+#import "SNCGoogleShopDetails.h"
+#import "SNCGoogleNearbySearch.h"
 
 @interface SNCGoogleAddressAutocompletionPlugin ()
 
@@ -77,9 +80,26 @@
 - (void)placesForSearchTerm:(NSString *)searchTerm
                    latitude:(double)lat
                   longitude:(double)lon
-          completionHandler:(SNCAddressAutocompletionResultHandler)completionHandler {
+          completionHandler:(SNCNearbySearchResultHandler)completionHandler {
     [self.mapsApi getAddressesForSearchTerm:searchTerm countryCode:@"" types:@"geocode" location:CLLocationCoordinate2DMake(lat, lon) googleApiKey:self.apiKey completionHandler:^(SNCGoogleAutocompleteAddresses * _Nullable addressAutocompletion, NSError * _Nullable error) {
-        completionHandler((id)addressAutocompletion, error);
+        if (error != nil) {
+            completionHandler(nil, error);
+        } else {
+            NSMutableArray *results = [NSMutableArray new];
+            for (id<SNCAddressPrediction> prediction in addressAutocompletion.predictions) {
+                NSDictionary *shopDictionary = @{
+                        @"name" : prediction.mainText,
+                    @"vicinity" : prediction.secondaryText,
+                    @"place_id" : prediction.addressId
+                };
+                
+                [results addObject: shopDictionary];
+            }
+            NSDictionary *nearbySearchDictionary = @{ @"results" : results };
+            
+            
+            completionHandler([[SNCGoogleNearbySearch alloc] initWithDictionary:nearbySearchDictionary], nil);
+        }
     }];
 }
 
