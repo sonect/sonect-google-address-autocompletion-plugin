@@ -35,22 +35,22 @@ class ViewController: UIViewController {
         
         let searchTerm = searchTextField?.text ?? "pizza"
         
-//        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
-//            print(String(describing: addressAutocompletion))
-//        }
-//
-//        plugin.adressDetails(forAddressId: "EhxMaXZlcnBvb2wgU3RyZWV0LCBMb25kb24sIFVLIi4qLAoUChIJqeLSXbIcdkgRqAbi6bi_PEcSFAoSCfPzF7dbG3ZIEQqyADl5LpFJ") { (details, error) in
-//            print(String(describing: details))
-//        }
-//
-//        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
-//            print(String(describing: shopSearch))
-//        }
-//
-//        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
-//            print(String(describing: details))
-//            self.imageView.image = details?.shopImage
-//        }
+        plugin.addressAutocompletion(forSearchTerm: searchTerm, countryCode: countryCode) { (addressAutocompletion, error) in
+            print(String(describing: addressAutocompletion))
+        }
+
+        plugin.adressDetails(forAddressId: "EhxMaXZlcnBvb2wgU3RyZWV0LCBMb25kb24sIFVLIi4qLAoUChIJqeLSXbIcdkgRqAbi6bi_PEcSFAoSCfPzF7dbG3ZIEQqyADl5LpFJ") { (details, error) in
+            print(String(describing: details))
+        }
+
+        plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
+            print(String(describing: shopSearch))
+        }
+
+        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
+            print(String(describing: details))
+            self.imageView.image = details?.shopImage
+        }
         
         removePlaceViews()
         
