@@ -28,16 +28,27 @@ static CGFloat defaultImageMaxWidth = 1024;
 
 - (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
+                            types:(NSString *)types
+                         location:(CLLocationCoordinate2D)location
                      googleApiKey:(NSString *)key
                 completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)completionHandler {
 
     NSURLComponents *serviceUrl = [NSURLComponents componentsWithString:addressAutocomplete];
-    serviceUrl.queryItems = @[
+    NSMutableArray *queryItems = [@[
         [NSURLQueryItem queryItemWithName:@"input" value:searchTerm],
-        [NSURLQueryItem queryItemWithName:@"types" value:@"address"],
-        [NSURLQueryItem queryItemWithName:@"key" value:key],
-        [NSURLQueryItem queryItemWithName:@"components" value:[NSString stringWithFormat:@"country:%@", countryCode]]
-    ];
+        [NSURLQueryItem queryItemWithName:@"types" value:types],
+        [NSURLQueryItem queryItemWithName:@"key" value:key]
+    ] mutableCopy];
+    
+    if (countryCode.length == 2) {
+        [queryItems addObject:[NSURLQueryItem queryItemWithName:@"components" value:[NSString stringWithFormat:@"country:%@", countryCode]]];
+    }
+    if (CLLocationCoordinate2DIsValid(location)) {
+        NSString *value = [NSString stringWithFormat:@"%lf,%lf", location.latitude, location.longitude];
+        value = [value stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        [queryItems addObject:[NSURLQueryItem queryItemWithName:@"location" value:value]];
+    }
+    serviceUrl.queryItems = queryItems;
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:serviceUrl.URL];
     request.HTTPMethod = @"GET";
