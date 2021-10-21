@@ -1,7 +1,7 @@
 platform :ios do
 
     def public_release(workspace, framework, repo, podspec)
-        # xcversion(version: "11.7")
+        xcversion(version: "11.7")
 
         cocoapods_archive = archive_framework_for_cocoapods(workspace, framework)
         cathage_archive = archive_framework_for_carthage(framework)
