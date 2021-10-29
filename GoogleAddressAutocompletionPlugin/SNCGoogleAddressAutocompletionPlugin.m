@@ -87,9 +87,13 @@
         } else {
             NSMutableArray *results = [NSMutableArray new];
             for (id<SNCAddressPrediction> prediction in addressAutocompletion.predictions) {
+                if (prediction.mainText == nil || prediction.addressId == nil) {
+                    continue;
+                }
+                
                 NSDictionary *shopDictionary = @{
                         @"name" : prediction.mainText,
-                    @"vicinity" : prediction.secondaryText,
+                    @"vicinity" : prediction.secondaryText ?: @"",
                     @"place_id" : prediction.addressId
                 };
                 
