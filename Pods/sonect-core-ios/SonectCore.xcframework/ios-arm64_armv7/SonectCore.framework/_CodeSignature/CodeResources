@@ -14,11 +14,7 @@
 		</data>
 		<key>Headers/SNCAddressAutocompletionPlugin.h</key>
 		<data>
-		7HSX2goe3k7B2dl8F9g9DeKSvjo=
-		</data>
-		<key>Headers/SNCCLIColor.h</key>
-		<data>
-		snXeJCgT/kmOQg1h2ZHzBHp0tig=
+		daNA9IyARag0fj0wnWN46vLiP50=
 		</data>
 		<key>Headers/SNCCalendarUtilities.h</key>
 		<data>
@@ -28,85 +24,13 @@
 		<data>
 		VmKx6AweYb0ljTEK1431bUEPzzw=
 		</data>
-		<key>Headers/SNCDDASLLogCapture.h</key>
-		<data>
-		lYffjaG5Ch6NtMgtKGzJ8tJzRdU=
-		</data>
-		<key>Headers/SNCDDASLLogger.h</key>
-		<data>
-		94m+MyPYBrWA3n6340/E2aa7iyU=
-		</data>
-		<key>Headers/SNCDDAbstractDatabaseLogger.h</key>
-		<data>
-		tV3dFMSdJIFfysBahFrSR/2CLNI=
-		</data>
-		<key>Headers/SNCDDAssertMacros.h</key>
-		<data>
-		4/dxUj1yDTTSy9r/Hy8zjMFn59U=
-		</data>
-		<key>Headers/SNCDDContextFilterLogFormatter.h</key>
-		<data>
-		0NXA2687F+YxCu6tslQ0CQiKWnk=
-		</data>
-		<key>Headers/SNCDDDispatchQueueLogFormatter.h</key>
-		<data>
-		l17iq5xOpTfr25SeaMgYpCDgyOM=
-		</data>
-		<key>Headers/SNCDDFileLogger+Buffering.h</key>
-		<data>
-		P/2r5/qAUg18WgSv/9NtB39bg2k=
-		</data>
-		<key>Headers/SNCDDFileLogger.h</key>
-		<data>
-		pGWTf0NBfPG8pmH3oz3aKhDlCGw=
-		</data>
-		<key>Headers/SNCDDLegacyMacros.h</key>
-		<data>
-		XT400zr4LiQcUGG5devIAXeVXdw=
-		</data>
-		<key>Headers/SNCDDLog+LOGV.h</key>
-		<data>
-		f28uvcrjlc7xE56yL5Cauu4wLkA=
-		</data>
-		<key>Headers/SNCDDLog.h</key>
-		<data>
-		5+k19O+OGSPdGnPFJP+7Yx0A1bM=
-		</data>
-		<key>Headers/SNCDDLogMacros.h</key>
-		<data>
-		3K9T58O1gBRdZwyjMs+/hQTBcqE=
-		</data>
-		<key>Headers/SNCDDLoggerNames.h</key>
-		<data>
-		oxvZ73UyRYB4dsGGHwwtSsGEAA8=
-		</data>
-		<key>Headers/SNCDDMultiFormatter.h</key>
-		<data>
-		mC5GmASOD9gXNTqUzyz5c+sS3PU=
-		</data>
-		<key>Headers/SNCDDOSLogger.h</key>
-		<data>
-		yhCLVJD9lkVwMrmaJ+3f4Bnx1jg=
-		</data>
-		<key>Headers/SNCDDTTYLogger.h</key>
-		<data>
-		o5Vk4Yeg779szWw3IJxaCViS5tU=
-		</data>
 		<key>Headers/SNCKycProviderPlugin.h</key>
 		<data>
 		+LLkEaEo3XuhiKSnCyCXW+iRAyI=
 		</data>
 		<key>Headers/SNCLogging.h</key>
 		<data>
-		wTNsgPKAlOKzSmHTDoaYw4UF0mU=
-		</data>
-		<key>Headers/SNCLoggingManager.h</key>
-		<data>
-		uceqyfylQPuq4nl676D+429X2S4=
-		</data>
-		<key>Headers/SNCLoggingSwift.h</key>
-		<data>
-		8eQK99kEguU9Xzs8sWw2Ghbbzxc=
+		ZJURcVKh5ZBWZUHj6+XhEaP/tH0=
 		</data>
 		<key>Headers/SNCOpeningHours.h</key>
 		<data>
@@ -124,89 +48,21 @@
 		<data>
 		tMGH7hveYRbaKw/Zz7FGBDgoF5g=
 		</data>
-		<key>Headers/SonectCore-Swift.h</key>
-		<data>
-		ERP97aOlH8atHOAkx3NUhBoy3SA=
-		</data>
 		<key>Headers/SonectCore.h</key>
 		<data>
-		zwYRZTVeBC5QiXoFLp9Z7yom96U=
+		GqODTjzwWvUTP0q6GwjSuR6Wkeo=
 		</data>
 		<key>Headers/SonectDefines.h</key>
 		<data>
 		l/0x2CCRTDzjtYBov5+MERQRKZQ=
 		</data>
-		<key>Headers/SwiftLogLevel.h</key>
-		<data>
-		GVqRSmsvMM/kEoY7F0cdgCrBXnA=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		oxc3d3Twzgyx0bINVtlY3zoZpi0=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm.swiftdoc</key>
-		<data>
-		xZOmurg2c/2kpZ7tiammUmQZQRw=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm.swiftinterface</key>
-		<data>
-		//TXwRW8M7WvOZ9Eo2bTCnH7oTQ=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm.swiftmodule</key>
-		<data>
-		RKEQuvrcgG8pU7O/6jnV6CGl+q8=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		T5RNDmTMoX5+bjNuZOsqoi29zns=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
-		<data>
-		BmuhTfEdDg4yEVuYXc3+KP2rVUQ=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		TcJb51UR1tTurTTrRwJTAtDd1Hc=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		T5RNDmTMoX5+bjNuZOsqoi29zns=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		BmuhTfEdDg4yEVuYXc3+KP2rVUQ=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		TcJb51UR1tTurTTrRwJTAtDd1Hc=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<data>
-		xZOmurg2c/2kpZ7tiammUmQZQRw=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftinterface</key>
-		<data>
-		//TXwRW8M7WvOZ9Eo2bTCnH7oTQ=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<data>
-		RKEQuvrcgG8pU7O/6jnV6CGl+q8=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/armv7.swiftdoc</key>
-		<data>
-		xZOmurg2c/2kpZ7tiammUmQZQRw=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/armv7.swiftinterface</key>
-		<data>
-		//TXwRW8M7WvOZ9Eo2bTCnH7oTQ=
-		</data>
-		<key>Modules/SonectCore.swiftmodule/armv7.swiftmodule</key>
-		<data>
-		RKEQuvrcgG8pU7O/6jnV6CGl+q8=
+		jK3rGvUIfBGr62bO8dckxCn3eVI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ckJns+tUGy1ETnEFKmpt6m90Y0c=
+		7NVBg8ZBbnpIFmBk3vH6xyNvtzY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -237,22 +93,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7HSX2goe3k7B2dl8F9g9DeKSvjo=
+			daNA9IyARag0fj0wnWN46vLiP50=
 			</data>
 			<key>hash2</key>
 			<data>
-			FEy5dz5OQjY2BEZ9laGDE7coDuE/ipvvWMm6/yjoLck=
-			</data>
-		</dict>
-		<key>Headers/SNCCLIColor.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			snXeJCgT/kmOQg1h2ZHzBHp0tig=
-			</data>
-			<key>hash2</key>
-			<data>
-			1RJKDZV+MHFo25Yrp6c5EdEIzG48Nqsfx1rD1lIseWA=
+			yUeWRoxMxj9C+4/EV7dD8FyfV/2TeiliC+Tq6kGHUKQ=
 			</data>
 		</dict>
 		<key>Headers/SNCCalendarUtilities.h</key>
@@ -277,182 +122,6 @@
 			anuGTCkhGqv8MLE+8hhVqAXdITj71K3kIFKRkXscak8=
 			</data>
 		</dict>
-		<key>Headers/SNCDDASLLogCapture.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lYffjaG5Ch6NtMgtKGzJ8tJzRdU=
-			</data>
-			<key>hash2</key>
-			<data>
-			Puz5JH4HX6uIiLkTUN6ZGvyUGrRiyT8rV7SST5xwVoE=
-			</data>
-		</dict>
-		<key>Headers/SNCDDASLLogger.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			94m+MyPYBrWA3n6340/E2aa7iyU=
-			</data>
-			<key>hash2</key>
-			<data>
-			SaCZM6G/olzi+aFkMTUFVYqBve7SQB0oVfwI/GqE4Fo=
-			</data>
-		</dict>
-		<key>Headers/SNCDDAbstractDatabaseLogger.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tV3dFMSdJIFfysBahFrSR/2CLNI=
-			</data>
-			<key>hash2</key>
-			<data>
-			zsxbGHUlHoleYS1UnKPas7HilhuZXorKVhiFwMlFTUE=
-			</data>
-		</dict>
-		<key>Headers/SNCDDAssertMacros.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4/dxUj1yDTTSy9r/Hy8zjMFn59U=
-			</data>
-			<key>hash2</key>
-			<data>
-			1epXUlwOkT18xzPnQ9/iVPagrMsN+1Aehma4EpTawHg=
-			</data>
-		</dict>
-		<key>Headers/SNCDDContextFilterLogFormatter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0NXA2687F+YxCu6tslQ0CQiKWnk=
-			</data>
-			<key>hash2</key>
-			<data>
-			LKE8gv4oiZIj3etRO608jP7TsPeYqh9orG2GA1CvgnU=
-			</data>
-		</dict>
-		<key>Headers/SNCDDDispatchQueueLogFormatter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			l17iq5xOpTfr25SeaMgYpCDgyOM=
-			</data>
-			<key>hash2</key>
-			<data>
-			9TlXY7m1B/PpCUwdA8eoyldgs3dJzSmPmrpSJfLBE7g=
-			</data>
-		</dict>
-		<key>Headers/SNCDDFileLogger+Buffering.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P/2r5/qAUg18WgSv/9NtB39bg2k=
-			</data>
-			<key>hash2</key>
-			<data>
-			GseKlTPLo4iqdvBmNLQYrDmxlA5t3yD/w3iH+PpoY8I=
-			</data>
-		</dict>
-		<key>Headers/SNCDDFileLogger.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pGWTf0NBfPG8pmH3oz3aKhDlCGw=
-			</data>
-			<key>hash2</key>
-			<data>
-			yecn37IuZ5yFwHFBTU0HmL7mMr821chSnVuIZ0Y9PdY=
-			</data>
-		</dict>
-		<key>Headers/SNCDDLegacyMacros.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XT400zr4LiQcUGG5devIAXeVXdw=
-			</data>
-			<key>hash2</key>
-			<data>
-			go/K+0jAddWBDJ8GBYzF/v4cyQ36/QmoveXvh4UdpkA=
-			</data>
-		</dict>
-		<key>Headers/SNCDDLog+LOGV.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			f28uvcrjlc7xE56yL5Cauu4wLkA=
-			</data>
-			<key>hash2</key>
-			<data>
-			52wWJ73qJluILZHDyjzKWgOaB9F4f9XSb0auXafCNlU=
-			</data>
-		</dict>
-		<key>Headers/SNCDDLog.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5+k19O+OGSPdGnPFJP+7Yx0A1bM=
-			</data>
-			<key>hash2</key>
-			<data>
-			/2/gZO5g/d5uQrjg8pFWMsBlS1Q0ykI65KOn+x5G4t0=
-			</data>
-		</dict>
-		<key>Headers/SNCDDLogMacros.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3K9T58O1gBRdZwyjMs+/hQTBcqE=
-			</data>
-			<key>hash2</key>
-			<data>
-			42ZXDXBPk7M7tRmi6jYXkY288cWbAeB1y0Q+jg/9w1k=
-			</data>
-		</dict>
-		<key>Headers/SNCDDLoggerNames.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oxvZ73UyRYB4dsGGHwwtSsGEAA8=
-			</data>
-			<key>hash2</key>
-			<data>
-			vjOO8Uk7rPkWUti9w6Y+V2jirM8jSvtkHGidJYdvbRQ=
-			</data>
-		</dict>
-		<key>Headers/SNCDDMultiFormatter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mC5GmASOD9gXNTqUzyz5c+sS3PU=
-			</data>
-			<key>hash2</key>
-			<data>
-			OhxWoLYWHiLWPQLGHQMYYfrUvVitld6qPQ75XxtBFm8=
-			</data>
-		</dict>
-		<key>Headers/SNCDDOSLogger.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yhCLVJD9lkVwMrmaJ+3f4Bnx1jg=
-			</data>
-			<key>hash2</key>
-			<data>
-			KhKhhIVjIYpyPd1FHQU4F4j1ITVW8wEXWDcNcZ3BhTk=
-			</data>
-		</dict>
-		<key>Headers/SNCDDTTYLogger.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			o5Vk4Yeg779szWw3IJxaCViS5tU=
-			</data>
-			<key>hash2</key>
-			<data>
-			FR8UDYFzKNOUl8C9p0VFjS+I71o0aJIEbHgo9TY3tbg=
-			</data>
-		</dict>
 		<key>Headers/SNCKycProviderPlugin.h</key>
 		<dict>
 			<key>hash</key>
@@ -468,33 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wTNsgPKAlOKzSmHTDoaYw4UF0mU=
+			ZJURcVKh5ZBWZUHj6+XhEaP/tH0=
 			</data>
 			<key>hash2</key>
 			<data>
-			oAeK6T7z0vzN8kbsg6gkEBIzFS6j/EGruISYQIgj9qo=
-			</data>
-		</dict>
-		<key>Headers/SNCLoggingManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uceqyfylQPuq4nl676D+429X2S4=
-			</data>
-			<key>hash2</key>
-			<data>
-			a8v3X4TgzaOH5GwVYa2Bie6UbvgM1wVq9PlOUj2Rbic=
-			</data>
-		</dict>
-		<key>Headers/SNCLoggingSwift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8eQK99kEguU9Xzs8sWw2Ghbbzxc=
-			</data>
-			<key>hash2</key>
-			<data>
-			MU51Ld/0O9uxuFLh28/FJMheZ1hhBJQOkTDw67dCHzw=
+			5Z6ZR+61as4DprAqsmRxPgWz6bxHhhnnC23ybWa6cvw=
 			</data>
 		</dict>
 		<key>Headers/SNCOpeningHours.h</key>
@@ -541,26 +188,15 @@
 			W7nIWT206wYDl6qmyets8FFZXblgdOCoEIEzQM+jQwg=
 			</data>
 		</dict>
-		<key>Headers/SonectCore-Swift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ERP97aOlH8atHOAkx3NUhBoy3SA=
-			</data>
-			<key>hash2</key>
-			<data>
-			1YrRbgnS0p/GOG+wfM1Po5DnQYJDvrU9PdZTO2MHWxg=
-			</data>
-		</dict>
 		<key>Headers/SonectCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zwYRZTVeBC5QiXoFLp9Z7yom96U=
+			GqODTjzwWvUTP0q6GwjSuR6Wkeo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wf1gpbEiBjNoFVv/pMypyLOygYaf9XZC+9qPRVWny/w=
+			KJJhI2Qbxpk5WrgW6ezzqYQrEOo5jIEStxdH7limly0=
 			</data>
 		</dict>
 		<key>Headers/SonectDefines.h</key>
@@ -574,191 +210,15 @@
 			QALlNwAMa3yP3N5p4RNaPNhZL1KpjWPc3iokshWdj5w=
 			</data>
 		</dict>
-		<key>Headers/SwiftLogLevel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GVqRSmsvMM/kEoY7F0cdgCrBXnA=
-			</data>
-			<key>hash2</key>
-			<data>
-			IXQDOwEgeoZaZEF4gY2Bsw+HKcM/G5GK2HuNkL6y9zQ=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xZOmurg2c/2kpZ7tiammUmQZQRw=
-			</data>
-			<key>hash2</key>
-			<data>
-			bK3b0LLu2q0hbZTFNm87hmy1qwwjjOXt56FRPfbDiqA=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			//TXwRW8M7WvOZ9Eo2bTCnH7oTQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			pmCUfN8t/L0Ftjv9d3wCwWr0HZ4zbAIqIrffiZUdRXg=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RKEQuvrcgG8pU7O/6jnV6CGl+q8=
-			</data>
-			<key>hash2</key>
-			<data>
-			63SqUxMo0PzA+SErMl2MefDG311TvjKhAMHyc08NZvc=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T5RNDmTMoX5+bjNuZOsqoi29zns=
-			</data>
-			<key>hash2</key>
-			<data>
-			CVSEKRngixNfVk4MsoDVOYAb4ZcADVRxY1SfeOZX3Yk=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BmuhTfEdDg4yEVuYXc3+KP2rVUQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			k5ZuqkQuZ7Lr2IPZSTroSQO7eJsm+kBtDzaU2FFA6nI=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TcJb51UR1tTurTTrRwJTAtDd1Hc=
-			</data>
-			<key>hash2</key>
-			<data>
-			7cvidVeDlRKJVL15nChuolAatoYmZhB0H+mA1bo00ZM=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T5RNDmTMoX5+bjNuZOsqoi29zns=
-			</data>
-			<key>hash2</key>
-			<data>
-			CVSEKRngixNfVk4MsoDVOYAb4ZcADVRxY1SfeOZX3Yk=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BmuhTfEdDg4yEVuYXc3+KP2rVUQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			k5ZuqkQuZ7Lr2IPZSTroSQO7eJsm+kBtDzaU2FFA6nI=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TcJb51UR1tTurTTrRwJTAtDd1Hc=
-			</data>
-			<key>hash2</key>
-			<data>
-			7cvidVeDlRKJVL15nChuolAatoYmZhB0H+mA1bo00ZM=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xZOmurg2c/2kpZ7tiammUmQZQRw=
-			</data>
-			<key>hash2</key>
-			<data>
-			bK3b0LLu2q0hbZTFNm87hmy1qwwjjOXt56FRPfbDiqA=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			//TXwRW8M7WvOZ9Eo2bTCnH7oTQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			pmCUfN8t/L0Ftjv9d3wCwWr0HZ4zbAIqIrffiZUdRXg=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RKEQuvrcgG8pU7O/6jnV6CGl+q8=
-			</data>
-			<key>hash2</key>
-			<data>
-			63SqUxMo0PzA+SErMl2MefDG311TvjKhAMHyc08NZvc=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/armv7.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xZOmurg2c/2kpZ7tiammUmQZQRw=
-			</data>
-			<key>hash2</key>
-			<data>
-			bK3b0LLu2q0hbZTFNm87hmy1qwwjjOXt56FRPfbDiqA=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/armv7.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			//TXwRW8M7WvOZ9Eo2bTCnH7oTQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			pmCUfN8t/L0Ftjv9d3wCwWr0HZ4zbAIqIrffiZUdRXg=
-			</data>
-		</dict>
-		<key>Modules/SonectCore.swiftmodule/armv7.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RKEQuvrcgG8pU7O/6jnV6CGl+q8=
-			</data>
-			<key>hash2</key>
-			<data>
-			63SqUxMo0PzA+SErMl2MefDG311TvjKhAMHyc08NZvc=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ckJns+tUGy1ETnEFKmpt6m90Y0c=
+			7NVBg8ZBbnpIFmBk3vH6xyNvtzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			o6GDXxfdlvfDJT1jaCKPyRwHn4aQrINdbZHJ0P6YSZE=
+			rOrDzPLgFAerxOALiNJYrdw5RUrDrZHOhiMw838BMI0=
 			</data>
 		</dict>
 	</dict>

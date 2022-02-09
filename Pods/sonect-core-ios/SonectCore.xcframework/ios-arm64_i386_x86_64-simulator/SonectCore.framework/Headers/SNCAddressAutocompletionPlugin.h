@@ -75,7 +75,7 @@ typedef void(^SNCShopDetailsResultHandler)(id<SNCShopDetails> _Nullable shopDeta
 typedef void(^SNCNearbySearchResultHandler)(id<SNCNearbySearch> _Nullable, NSError * _Nullable error);
 typedef void(^SNCImageLoadCompletionHandler)(UIImage * _Nullable, NSError * _Nullable);
 
-SNC_SWIFT_NAME(AddressDetails)
+SNC_SWIFT_NAME(AddressAutocompletionPlugin)
 @protocol SNCAddressAutocompletionPlugin <NSObject>
 
 - (void)addressAutocompletionForSearchTerm:(NSString *)searchTerm
@@ -100,6 +100,7 @@ SNC_SWIFT_NAME(AddressDetails)
 - (void)photoFromReference:(NSString *)photoReference
                   maxWidth:(double)maxWidth
          completionHandler:(SNCImageLoadCompletionHandler)completionHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

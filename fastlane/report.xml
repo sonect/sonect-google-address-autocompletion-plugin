@@ -5,54 +5,72 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000505">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000553">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: create_xcframework" time="23.351807">
+      <testcase classname="fastlane.lanes" name="01: xcversion" time="14.790771">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: ditto -c -k --sequesterRsrc --keepParent ../Build/XCFrameworks/GoogleAddressAutocompletionPlugin.xcframework ../GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip" time="0.05578">
+      <testcase classname="fastlane.lanes" name="02: create_xcframework" time="23.555132">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: cd .. &amp;&amp; ./carthage-build.sh build --platform iOS --no-skip-current" time="18.986415">
+      <testcase classname="fastlane.lanes" name="03: ditto -c -k --sequesterRsrc --keepParent ../Build/XCFrameworks/GoogleAddressAutocompletionPlugin.xcframework ../GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip" time="0.045561">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: carthage" time="0.302668">
+      <testcase classname="fastlane.lanes" name="04: cd .. &amp;&amp; ./carthage-build.sh build --platform iOS --no-skip-current" time="18.788321">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: get_version_number" time="0.090568">
+      <testcase classname="fastlane.lanes" name="05: carthage" time="0.285055">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: set_github_release" time="0.360063">
+      <testcase classname="fastlane.lanes" name="06: get_version_number" time="0.112886">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: cd .. &amp;&amp; rm GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip GoogleAddressAutocompletionPlugin.framework.zip" time="0.008275">
+      <testcase classname="fastlane.lanes" name="07: set_github_release" time="3.056968">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="8: version_bump_podspec" time="0.001155">
+      <testcase classname="fastlane.lanes" name="08: cd .. &amp;&amp; rm GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip GoogleAddressAutocompletionPlugin.framework.zip" time="0.011046">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="9: pod_push" time="9.753137">
+      <testcase classname="fastlane.lanes" name="09: version_bump_podspec" time="0.002205">
         
-          <failure message="/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;ReleaseFramework.rb:25:in `public_release'&#10;Fastfile:23:in `block (2 levels) in parsing_binding'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/commands_generator.rb:352:in `run'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/gems/fastlane-2.179.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/bin/fastlane:23:in `load'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/bin/fastlane:23:in `&lt;main&gt;'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/bin/ruby_executable_hooks:22:in `eval'&#10;/Users/markohlebar/.rvm/gems/ruby-2.7.2/bin/ruby_executable_hooks:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod trunk push' was 1 instead of 0.&#10;[32m&#10;[!] Found podspec `sonect-google-address-autocompletion-plugin.podspec`[0m&#10;Updating spec repo `trunk`&#10;&#10;CocoaPods 1.11.2 is available.&#10;To update use: `sudo gem install cocoapods`&#10;&#10;For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.11.2&#10;&#10;Validating podspec&#10; -&gt; sonect-google-address-autocompletion-plugin -&gt; sonect-google-address-autocompletion-plugin (1.2.3)&#10;    - NOTE  | xcodebuild:  note: Using new build system&#10;    - NOTE  | xcodebuild:  note: Building targets in parallel&#10;    - NOTE  | xcodebuild:  note: Using codesigning identity override: -&#10;    - NOTE  | [iOS] xcodebuild:  note: Planning build&#10;    - NOTE  | [iOS] xcodebuild:  note: Constructing build description&#10;    - NOTE  | [iOS] xcodebuild:  warning: Skipping code signing because the target does not have an Info.plist file and one is not being generated automatically. (in target 'App' from project 'App')&#10;&#10;[!] Unable to accept duplicate entry for: sonect-google-address-autocompletion-plugin (1.2.3)&#10;" />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: pod_push" time="42.543358">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: git_add" time="0.269044">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: git_commit" time="0.365881">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: push_to_git_remote" time="3.347372">
         
       </testcase>
     

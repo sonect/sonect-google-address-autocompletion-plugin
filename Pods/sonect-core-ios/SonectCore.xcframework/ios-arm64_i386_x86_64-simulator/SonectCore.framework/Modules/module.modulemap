@@ -4,8 +4,3 @@ framework module SonectCore {
   export *
   module * { export * }
 }
-
-module SonectCore.Swift {
-    header "SonectCore-Swift.h"
-    requires objc
-}

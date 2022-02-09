@@ -27,9 +27,7 @@
     self = [super init];
     if (self) {
         _apiKey = apiKey;
-        _mapsApi = [SNCGoogleMapsAPI new];
-        
-        [SNCLoggingManager setupLoggers];
+        _mapsApi = [SNCGoogleMapsAPI new];        
     }
     
     return self;
