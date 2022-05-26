@@ -51,7 +51,9 @@
     
     for (NSDictionary *periodDictionary in openingHoursDictionary[@"periods"]) {
         SNCDayTime *openTime = [[SNCDayTime alloc] initWithDay:[periodDictionary[@"open"][@"day"] unsignedIntValue] andTime:[periodDictionary[@"open"][@"time"] copy]];
-        SNCDayTime *closeTime = [[SNCDayTime alloc] initWithDay:[periodDictionary[@"close"][@"day"] unsignedIntValue] andTime:[periodDictionary[@"close"][@"time"] copy]];
+        NSString *periodCloseTime = [periodDictionary[@"close"][@"time"] copy];
+        periodCloseTime = [periodCloseTime isEqualToString:@"0000"] ? @"2359" : periodCloseTime;
+        SNCDayTime *closeTime = [[SNCDayTime alloc] initWithDay:[periodDictionary[@"close"][@"day"] unsignedIntValue] andTime:periodCloseTime];
         SNCPeriod *period = [[SNCPeriod alloc] initWithOpeningTime:openTime andClosingTime:closeTime];
         
         [periods addObject:period];

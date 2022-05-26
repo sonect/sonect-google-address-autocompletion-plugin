@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             print(String(describing: addressAutocompletion))
         }
         
-        plugin.adressDetails(forAddressId: "EhxMaXZlcnBvb2wgU3RyZWV0LCBMb25kb24sIFVLIi4qLAoUChIJqeLSXbIcdkgRqAbi6bi_PEcSFAoSCfPzF7dbG3ZIEQqyADl5LpFJ") { (details, error) in
+        plugin.adressDetails(forAddressId: "ChIJYyu-4g0KkEcRg0hosH189t8") { (details, error) in
             print(String(describing: details))
         }
         
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             print(String(describing: shopSearch))
         }
         
-        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
+        plugin.shopDetails(forShopId: "ChIJYyu-4g0KkEcRg0hosH189t8") { (details, error) in
             print(String(describing: details))
             self.imageView.image = details?.shopImage
         }
