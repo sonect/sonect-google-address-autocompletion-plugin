@@ -46,8 +46,8 @@ class ViewController: UIViewController {
         plugin.shops(forSearchTerm: searchTerm, countryCode: countryCode) { (shopSearch, error) in
             print(String(describing: shopSearch))
         }
-
-        plugin.shopDetails(forShopId: "ChIJBZ0aNKes2EcRou8EZfpOOy0") { (details, error) in
+        
+        plugin.shopDetails(forShopId: "ChIJYyu-4g0KkEcRg0hosH189t8") { (details, error) in
             print(String(describing: details))
             self.imageView.image = details?.shopImage
         }
