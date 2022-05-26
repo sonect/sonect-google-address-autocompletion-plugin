@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,6 +26,8 @@ typedef void(^SNCGooglePlaceSearchResultHandler)(SNCGoogleNearbySearch * _Nullab
 
 - (void)getAddressesForSearchTerm:(NSString *)searchTerm
                       countryCode:(NSString *)countryCode
+                            types:(NSString *)types
+                         location:(CLLocationCoordinate2D)location
                      googleApiKey:(NSString *)key
                 completionHandler:(SNCGoogleAddressAutocompletionCompletionHandler)compleionHandler;
 

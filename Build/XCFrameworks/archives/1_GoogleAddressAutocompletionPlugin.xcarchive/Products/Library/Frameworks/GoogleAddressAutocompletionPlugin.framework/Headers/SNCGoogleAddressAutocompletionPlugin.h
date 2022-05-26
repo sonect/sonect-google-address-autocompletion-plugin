@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SonectCore/SonectCore.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, getter = isDebuggingEnabled) BOOL debuggingEnabled;
 
 - (instancetype)initWithApiKey:(NSString *)apiKey;
-
 @end
 
 NS_ASSUME_NONNULL_END
