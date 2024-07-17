@@ -1,1 +1,1 @@
-${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/sonect-core-ios/SonectCore.framework
