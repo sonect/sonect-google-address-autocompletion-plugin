@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-AddressAutocompletionPluginIntegrationApp/Pods-AddressAutocompletionPluginIntegrationApp-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectCore/SonectCore.framework/SonectCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/sonect-core-ios/SonectCore.framework/SonectCore
