@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
                  }
     spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
     spec.platform     = :ios, "13.0"
-    spec.source       = { :http => "https://github.com/sonect/sonect-google-address-autocompletion-plugin/releases/download/#{spec.version}/GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip" }
+    spec.source       = { :http => "https://github.com/sonect/sonect-google-address-autocompletion-plugin/releases/download/1.3.5/GoogleAddressAutocompletionPlugin_Cocoapods.framework.zip" }
     spec.ios.vendored_frameworks = 'GoogleAddressAutocompletionPlugin.xcframework'
   
   end
